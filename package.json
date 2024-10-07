@@ -1,0 +1,27 @@
+{
+  "name": "fit-onepager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "firebase": "^10.13.2",
+    "formidable": "^3.5.1",
+    "latest": "^0.2.0",
+    "multer": "^1.4.5-lts.1",
+    "next": "14.2.5",
+    "node": "^20.18.0",
+    "nodemailer": "^6.9.15",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
+  }
+}

@@ -1,0 +1,34 @@
+.formSection {
+  padding: 2rem;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form {
+  flex: 1;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.formInput, .formTextarea, .formCheckbox, .formButton {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.formImage {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.formError {
+  color: red;
+}
