@@ -1,5 +1,5 @@
 :root {
-  --colorBgr: #272727;
+  --colorBgr: #000000;
   --colorPrimary: #dbdbdb;
   --colorSecundary: #b9b9b9;
   --fontPrimary: "Poppins", sans-serif;
@@ -8,7 +8,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --colorBgr: #272727;
+    --colorBgr: #000000;
     --colorPrimary: #dbdbdb;
     --colorSecundary: #b9b9b9;
     --fontPrimary: "Poppins", sans-serif;
@@ -30,7 +30,7 @@ body {
 
 body {
   color: rgb(158, 158, 158);
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(0, 0, 0);
 }
 
 a {

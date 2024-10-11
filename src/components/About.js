@@ -1,22 +1,64 @@
-import Image from "next/image";
-import styles from "../app/styles/page.module.css";
+import Image from 'next/image';
+import styles from './About.module.css';
 
 export default function About() {
   return (
-    <section id="about" className={styles.section}>
-      <h2>About</h2>
-      <div className={styles.aboutSection}>
-        <Image src="/Barbara.jpg" alt="BARBER balance" width={300} height={400} />
-        <div className={styles.aboutRight}>
-          <p>
-            BARBER balance is a fitness studio that offers a variety of training
-            options to help you reach your fitness goals. We offer personal training
-            and group classes in fitness, aerial silks, and complex training.
-          </p>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
+    <section className={styles.aboutSection}>
+      <h2 className={styles.title}>O TRENÉRCE</h2>
+      <div className={styles.container}>
+        <div className={styles.imageWrapper}>
+          <Image
+            src="/barbara2.jpeg"
+            alt="Barbara Maiarino"
+            width={500}
+            height={700}
+            className={styles.mainImage}
+          />
+        </div>
+        <div className={styles.textWrapper}>
+          <div className={styles.descriptionWrapper}>
+            <p>
+              Se silovým tréninkem mám desetiletou zkušenost, kdy jsem začínala
+              úplně sama bez žádného vedení. Prošla jsem všemi chybami, které
+              může začátečník na své cestě udělat, bez kterých bych si cestu dost
+              zkrátila. Ale získala jsem se během toho mnoho znalostí, které teď
+              předávám dál. Naučila jsem se, že ke změně života k lepšímu nestačí
+              jen držet se tréninkového plánu a jídelníčku, ale že ta největší změna
+              musí proběhnout v hlavě. Zamilovala jsem se do zkoumání lidského těla
+              a mysli natolik, že jsem vystudovala lidskou fyziologii a
+              neurobiologii na vysoké škole. Díky tomu teď zvládám koukat na
+              problémy komplexně a nedržím se zajetých dogmat, což se snažím
+              předávat dál.
+            </p>
+            <p>
+              Mezi mé sportovní úspěchy patří druhé místo na prestižní soutěži EVLS
+              Prague v roce 2023, kde jsem soutěžila v kategorii bikini fitness. Mimo
+              to mám medaili z mistrovství České republiky v Aerial Art na šále, díky
+              které jsem se kvalifikovala na mistrovství světa. Také jsem soutěžila
+              jako juniorka v silovém trojboji a pole dance.
+            </p>
+          </div>
+          <div className={styles.iconsWrapper}>
+            <div className={styles.iconItem}>
+              <Image src="/about1.png" alt="Deset let zkušeností" width={64} height={64} />
+              <p>Vice jak deset let zkušeností s posilováním</p>
+            </div>
+            <div className={styles.iconItem}>
+              <Image src="/about2.png" alt="EVLS Prague 2023" width={64} height={64} />
+              <p>Druhé místo na EVLS Prague 2023 v bikini fitness</p>
+            </div>
+            <div className={styles.iconItem}>
+              <Image src="/about3.png" alt="Silový trojboj" width={64} height={64} />
+              <p>Zkušenosti se silovým trojbojem a pole dance</p>
+            </div>
+            <div className={styles.iconItem}>
+              <Image src="/about4.png" alt="VŠ vzdělání" width={64} height={64} />
+              <p>VŠ vzdělání v oboru lidské fyziologie a neurobiologie</p>
+            </div>
+            <div className={styles.iconItem}>
+              <Image src="/about5.png" alt="Medaile v Aerial Arts" width={64} height={64} />
+              <p>Medailistka v Aerial Arts (Akrobacie na šále)</p>
+            </div>
           </div>
         </div>
       </div>
