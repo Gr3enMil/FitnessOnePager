@@ -1,0 +1,78 @@
+.servicesSection {
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    max-width: 1300px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+  }
+  
+  .servicesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .serviceCard {
+    border: 2px solid #747474;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: left;
+    width: 600px;
+    height: 34 0px;
+    font-size: 0.9rem;
+  }
+  
+  .serviceTitle {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .serviceContent {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start
+  }
+  
+  .imageWrapper {
+    flex-basis: 50%;
+  }
+  
+  .serviceImage {
+    width: 270px;
+    height: 270px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .textWrapper {
+    flex-basis: 50%;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+  }
+  
+  .textWrapper ul {
+    padding-left: 1rem;
+  }
+  
+  .note {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #fff;
+  }
+  .price {
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+    color: #fff;
+  }
+  

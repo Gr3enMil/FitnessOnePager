@@ -1,34 +1,22 @@
-.blogSection {
+.blogContainer {
   padding: 2rem;
+  color: #fff;
 }
 
-.blogTitle {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.postsContainer {
+.blogList {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.post {
+.blogItem {
+  background: #333;
   padding: 1rem;
-  border: 1px solid #ddd;
   border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
-.postTitle {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.postImage {
-  margin-bottom: 1rem;
-}
-
-.postExcerpt {
-  font-size: 1rem;
-  color: #555;
+.blogItem:hover {
+  transform: scale(1.05);
 }

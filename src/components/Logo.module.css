@@ -1,6 +1,6 @@
 .logoContainer {
     position: relative;
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     overflow: hidden;
   }
@@ -27,6 +27,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
   }
   
   .logoTitle {
@@ -49,7 +53,6 @@
   }
   
   .scrollButton {
-    margin-top: 10rem;
     background: transparent;
     border: none;
     cursor: pointer;

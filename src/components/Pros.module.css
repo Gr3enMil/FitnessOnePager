@@ -1,0 +1,43 @@
+.prosSection {
+    padding: 3rem 1rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .prosContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0 3rem 0;
+  }
+  
+  .proItem {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+  }
+  
+  .proImage {
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(0.85);
+  }
+  
+  .proTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .proDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  

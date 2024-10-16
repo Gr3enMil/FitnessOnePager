@@ -1,0 +1,91 @@
+.clientsSection {
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .clientCard {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    padding: 1rem;
+  }
+  
+  .imageWrapper {
+    flex: 1;
+    position: relative;
+    min-height: 300px;
+  }
+
+  .textWrapper {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .clientName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .testimonial {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .arrowButton {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .arrowButton:hover {
+    transform: scale(1.2);
+  }
+  
+  .dotsWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .activeDot {
+    background-color: #ff0000;
+  }
+  
