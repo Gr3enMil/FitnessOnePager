@@ -1,6 +1,7 @@
 .blogContainer {
   padding: 2rem;
   color: #fff;
+  min-height: 80vh;
 }
 
 .blogList {

@@ -1,42 +1,44 @@
-"use client"
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import ReactMarkdown from 'react-markdown';
 
-import styles from './blogPost.module.css';
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import { useParams } from 'next/navigation'; // použití `useParams` pro získání slugu
-import { getBlogsFromFirebase } from '@/app/api/blog/route'; // Získej metodu na získání dat z Firebase
-
-export default function BlogPost() {
-  const { slug } = useParams(); // Získání slugu z URL
-  const [blog, setBlog] = useState(null);
-
-  useEffect(() => {
-    const fetchBlog = async () => {
-      try {
-        const blogs = await getBlogsFromFirebase();
-        const foundBlog = blogs.find((blog) => blog.slug === slug);
-        setBlog(foundBlog);
-      } catch (error) {
-        console.error('Chyba při načítání blogového příspěvku:', error);
-      }
-    };
-
-    fetchBlog();
-  }, [slug]);
-
-  if (!blog) {
-    return <p>Načítání...</p>;
-  }
-
+export default function BlogPost({ frontmatter, content }) {
   return (
-    <div className={styles.blogPost}>
-      <h1>{blog.title}</h1>
-      <Image src={blog.image} alt={blog.title} className={styles.blogImage} />
-      <div className={styles.content}>
-        {blog.content.split("\n").map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
-      </div>
+    <div>
+      <h1>{frontmatter.title}</h1>
+      <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );
+}
+
+export async function getStaticPaths() {
+  const files = fs.readdirSync(path.join('src/content/blog'));
+
+  const paths = files.map((filename) => ({
+    params: {
+      slug: filename.replace('.md', ''),
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params: { slug } }) {
+  const markdownWithMeta = fs.readFileSync(
+    path.join('src/content/blog', slug + '.md'),
+    'utf-8'
+  );
+
+  const { data: frontmatter, content } = matter(markdownWithMeta);
+
+  return {
+    props: {
+      frontmatter,
+      content,
+    },
+  };
 }
