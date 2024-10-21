@@ -3,7 +3,16 @@ import path from 'path';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 
-export default function BlogPost({ frontmatter, content }) {
+export default function BlogPost({ params }) {
+  const { slug } = params;
+  
+  const markdownWithMeta = fs.readFileSync(
+    path.join('src/content/blog', `${slug}.md`),
+    'utf-8'
+  );
+  
+  const { data: frontmatter, content } = matter(markdownWithMeta);
+
   return (
     <div>
       <h1>{frontmatter.title}</h1>
@@ -12,33 +21,25 @@ export default function BlogPost({ frontmatter, content }) {
   );
 }
 
-export async function getStaticPaths() {
+export async function generateStaticParams() {
   const files = fs.readdirSync(path.join('src/content/blog'));
 
-  const paths = files.map((filename) => ({
-    params: {
-      slug: filename.replace('.md', ''),
-    },
+  return files.map((filename) => ({
+    slug: filename.replace('.md', ''),
   }));
-
-  return {
-    paths,
-    fallback: false,
-  };
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+
   const markdownWithMeta = fs.readFileSync(
-    path.join('src/content/blog', slug + '.md'),
+    path.join('src/content/blog', `${slug}.md`),
     'utf-8'
   );
 
-  const { data: frontmatter, content } = matter(markdownWithMeta);
+  const { data: frontmatter } = matter(markdownWithMeta);
 
   return {
-    props: {
-      frontmatter,
-      content,
-    },
+    title: frontmatter.title,
   };
 }
