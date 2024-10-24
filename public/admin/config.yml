@@ -1,14 +1,17 @@
 backend:
   name: git-gateway
-  branch: master # nebo hlavní větev vašeho repo
+  branch: master
 
-media_folder: "public/uploads" # Kde budou nahrávané soubory
-public_folder: "/uploads"      # URL cesta k mediálním souborům
+media_folder: "public/uploads" # Folder where media files will be stored
+public_folder: "/uploads"      # Public URL for the media files
+
+media_library:
+  name: uploadcare # Optional: choose a media library if you use one
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "src/content/blog" # Sem budou ukládány články
+    folder: "src/content/blog" # Folder where the blog posts will be stored
     create: true
     slug: "{{slug}}"
     fields:
