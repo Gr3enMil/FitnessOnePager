@@ -6,7 +6,7 @@ media_folder: "public/uploads" # Folder where media files will be stored
 public_folder: "/uploads"      # Public URL for the media files
 
 media_library:
-  name: uploadcare # Optional: choose a media library if you use one
+  name: simple # Optional: choose a media library if you use one
 
 collections:
   - name: "blog"
