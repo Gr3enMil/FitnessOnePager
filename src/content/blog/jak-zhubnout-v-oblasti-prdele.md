@@ -1,6 +1,6 @@
 ---
-title: Proč nežrat párky
+title: "RECEPT: jak hrát GTAčko"
 date: 2024-10-27T09:32:32.183Z
-image: /uploads/blogisek1.png
+image: /uploads/blog3.png
 ---
-P﻿rotože párky nejsou zdravé, ale jsou moc dobré a to i v příadě, kdy nejsou zdravé, tka pořád jsou dost dobré, protože párky nejsou zdravé, ale jsou dobré a proto se vyplatí je nežrat...
+Nejprve si hru stáhneme, zadarmo. Poté hru nainstalujeme, zadarmo. Poté hru hrajeme, zadarmo. A poté se smějeme lidem, kteří za hraní her platí a podporujou ty programátorský zmrdy a jejich nenažrané zaměstnavatele...
