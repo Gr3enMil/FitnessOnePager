@@ -15,7 +15,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Nazev", name: "nazev", widget: "string", hint: "Bez diakritiky, použijte malá písmena a pomlčky" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string", hint: "Bez diakritiky, použijte malá písmena a pomlčky" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
