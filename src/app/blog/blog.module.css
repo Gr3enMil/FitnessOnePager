@@ -1,23 +1,21 @@
 .blogContainer {
   padding: 2rem;
   color: #fff;
-  min-height: 80vh;
-}
-
-.blogList {
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
 }
 
-.blogItem {
-  background: #333;
-  padding: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s;
+.blogPost {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
-.blogItem:hover {
-  transform: scale(1.05);
+.blogPost li {
+  width: 45%;
 }
