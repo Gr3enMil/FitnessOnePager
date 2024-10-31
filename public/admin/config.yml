@@ -13,7 +13,7 @@ collections:
     label: "Blog"
     folder: "src/content/blog" # Folder where the blog posts will be stored
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.nazev}}"
     fields:
       - { label: "Nazev", name: "nazev", widget: "string", hint: "Bez diakritiky, použijte malá písmena a pomlčky" }
       - { label: "Title", name: "title", widget: "string" }
