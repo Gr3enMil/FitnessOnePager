@@ -1,45 +1,54 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown';
-
-export default function BlogPost({ params }) {
-  const { slug } = params;
-  
-  const markdownWithMeta = fs.readFileSync(
-    path.join('src/content/blog', `${slug}.md`),
-    'utf-8'
-  );
-  
-  const { data: frontmatter, content } = matter(markdownWithMeta);
-
-  return (
-    <div>
-      <h1>{frontmatter.title}</h1>
-      <ReactMarkdown>{content}</ReactMarkdown>
-    </div>
-  );
-}
+import styles from "./slug.module.css";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export async function generateStaticParams() {
-  const files = fs.readdirSync(path.join('src/content/blog'));
+  const postsDirectory = path.join(process.cwd(), 'src/content/blog');
+  const filenames = fs.readdirSync(postsDirectory);
 
-  return files.map((filename) => ({
-    slug: filename.replace('.md', ''),
+  return filenames.map((filename) => ({
+    slug: filename.replace(/\.md$/, ''),
   }));
 }
 
-export async function generateMetadata({ params }) {
+export default async function BlogPostPage({ params }) {
   const { slug } = params;
+  const filePath = path.join(process.cwd(), 'src/content/blog', `${slug}.md`);
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  const { data, content } = matter(fileContents);
 
-  const markdownWithMeta = fs.readFileSync(
-    path.join('src/content/blog', `${slug}.md`),
-    'utf-8'
+  return (
+    <div className={styles.blogContainer}>
+      <Link href="/blog" className={styles.blogLink}>
+      &lt; ZPĚT NA SEZNAM
+      </Link>
+      <article className={styles.blogPost}>
+        <h1 style={{ textTransform: 'uppercase', fontWeight: 'bold', marginBottom: '1rem' }}>
+          {data.title}
+        </h1>
+
+        <div className={styles.blogContent}>
+          {/* Obrázek */}
+          {data.image && (
+            <div className={styles.blogImage}>
+              <Image
+                src={data.image} // cesta k obrázku z frontmatteru, např. /uploads/blog2.png
+                alt={`Image for ${data.title}`} // SEO-friendly alt text
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+          )}
+
+          {/* Obsah příspěvku */}
+          <div className={styles.blogText}>
+            <p>{content}</p>
+          </div>
+        </div>
+      </article>
+    </div>
   );
-
-  const { data: frontmatter } = matter(markdownWithMeta);
-
-  return {
-    title: frontmatter.title,
-  };
 }

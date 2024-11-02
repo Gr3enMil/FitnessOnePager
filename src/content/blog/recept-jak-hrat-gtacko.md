@@ -1,4 +1,6 @@
 ---
+id: 4
+nazev: recept-jak-hrat-gtacko
 title: "RECEPT: jak hrát GTAčko"
 image: /uploads/blog3.png
 ---

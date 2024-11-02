@@ -1,0 +1,42 @@
+.blogContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogLink{
+  color: #ffffff;
+  text-decoration: none;
+  margin: 2rem;
+}
+
+.blogPost {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blogContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogImage {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Nastavte výšku podle potřeby */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.blogText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+

@@ -1,4 +1,6 @@
 ---
+id: 5
+nazev: jak-zrat-a-nezrat
 title: Jak žrát a nežrat
 image: /uploads/blog4.png
 ---

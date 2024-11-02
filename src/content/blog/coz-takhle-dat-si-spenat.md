@@ -1,4 +1,6 @@
 ---
+id: 1
+nazev: coz-takhle-dat-si-spenat
 title: což takhle dát si špenát
 image: /uploads/blog2.png
 ---

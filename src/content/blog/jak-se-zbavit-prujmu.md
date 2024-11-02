@@ -1,4 +1,5 @@
 ---
+id: 6
 nazev: jak-se-zbavit-prujmu
 title: Jak se zbavit průjmu?
 image: /uploads/client1.png

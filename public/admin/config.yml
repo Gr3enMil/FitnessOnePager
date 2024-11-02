@@ -15,7 +15,8 @@ collections:
     create: true
     slug: "{{fields.nazev}}"
     fields:
-      - { label: "Nazev", name: "nazev", widget: "string", hint: "Bez diakritiky, použijte malá písmena a pomlčky" }
+      - { label: "Id", name: "id", widget: "string", hint: "Pořadové číslo příspěvku" }
+      - { label: "Nazev", name: "nazev", widget: "string", hint: "např.: jak-napsat-blogovy-clanek" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }

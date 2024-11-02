@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .blogPost {
@@ -12,10 +14,17 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 5rem;
   justify-content: center;
 }
 
+
+
 .blogPost li {
-  width: 45%;
+  width: 40%;
+}
+
+.blogContent {
+  display: flex;
+  gap: 1rem;
 }
