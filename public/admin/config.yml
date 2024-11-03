@@ -3,7 +3,7 @@ backend:
   branch: master
 
 media_folder: "public/uploads" # Folder where media files will be stored
-public_folder: "/uploads"      # Public URL for the media files
+public_folder: "/uploads" # Public URL for the media files
 
 media_library:
   name: simple # Optional: choose a media library if you use one
@@ -20,3 +20,16 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
+
+  - name: "clients"
+    label: "Clients"
+    folder: "src/content/clients" # Folder where client profiles will be stored
+    create: true
+    slug: "{{fields.id}}" # You can also use another unique field if preferred
+    fields:
+      - { label: "Id", name: "id", widget: "string", hint: "Pořadové číslo klienta" }
+      - { label: "Photo", name: "photo", widget: "image", hint: "Nahrát fotografii klienta" }
+      - { label: "Name", name: "name", widget: "string", hint: "Jméno klienta" }
+      - { label: "Title", name: "title", widget: "string", hint: "Nadpis, např.: Zpevnění těla" }
+      - { label: "Odstavec", name: "paragraph1", widget: "markdown", hint: "První odstavec textu" }
+      - { label: "Odstavec", name: "paragraph2", widget: "markdown", hint: "Druhý odstavec textu" }

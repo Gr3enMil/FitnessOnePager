@@ -31,9 +31,6 @@ export default function Logo() {
               “Ať už je tvým cílem úbytek tělesného tuku, budování svalové hmoty, nebo se prostě jen naučit hýbat a posouvat ve všech oblastech života. Jsi na správném místě!”
             </p>
           </div>
-          <button className={styles.scrollButton} onClick={scrollToBottom}>
-            <span className={styles.arrow}>⌄</span>
-          </button>
         </div>
     </div> 
   );

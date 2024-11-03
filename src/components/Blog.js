@@ -1,11 +1,11 @@
-import Image from "next/image";
-import styles from "../app/styles/page.module.css";
+import styles from "./Blog.module.css";
+import BlogCarousel from "./BlogCarousel.js";
 
-export default function Blog() {
+export default function Blog({ posts }) {
   return (
-    <section id="about" className={styles.section}>
-      <h2>BLOG</h2>
-        
+    <section id="about" className={styles.blogSection}>
+      <h2 className={styles.blogHeading}>BLOG</h2>
+      <BlogCarousel posts={posts}/>
     </section>
   );
-}
+} 
