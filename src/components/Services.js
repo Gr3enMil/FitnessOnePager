@@ -3,7 +3,7 @@ import styles from './Services.module.css';
 
 export default function Services() {
   return (
-    <section className={styles.servicesSection}>
+    <section className={styles.servicesSection} id="services">
       <h2 className={styles.title}>SLUŽBY</h2>
       <div className={styles.servicesContainer}>
         <div className={styles.serviceCard}>

@@ -1,91 +1,64 @@
-.clientsSection {
-    padding: 2rem;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .clientCard {
-    display: flex;
-    gap: 2rem;
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out;
-    padding: 1rem;
-  }
-  
-  .imageWrapper {
-    flex: 1;
-    position: relative;
-    min-height: 300px;
-  }
+.clientsContainer {
+  text-align: center;
+}
 
-  .textWrapper {
-    flex: 1;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
-  .clientName {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-  
-  .testimonial {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: left;
-  }
-  
-  .arrowButton {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .arrowButton:hover {
-    transform: scale(1.2);
-  }
-  
-  .dotsWrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 0.5rem;
-  }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  .activeDot {
-    background-color: #ff0000;
-  }
-  
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrow {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.clientDetails {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clientImage {
+  width: 40%;
+}
+
+.clientInfo {
+  width: 55%;
+  text-align: left;
+}
+
+.clientInfo h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.clientInfo h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationDot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.paginationDotActive {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 5px;
+}

@@ -3,7 +3,7 @@ import styles from "../app/styles/page.module.css";
 
 export default function Contact() {
   return (
-    <section id="contact" className={styles.section}>
+    <section id="contact" className={styles.section} >
       <h2>Contact</h2>
       <p>
         To book a class or personal training session, 

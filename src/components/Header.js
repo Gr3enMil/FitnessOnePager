@@ -10,12 +10,12 @@ const Header = () => {
       </div>
       <nav className={styles.nav}>
         <ul>
-          <li><Link href="#about">O TRENÉRCE</Link></li>
-          <li><Link href="#advantages">VÝHODY</Link></li>
-          <li><Link href="#services">SLUŽBY</Link></li>
-          <li><Link href="#testimonials">REFERENCE</Link></li>
+          <li><Link href="/#about">O TRENÉRCE</Link></li>
+          <li><Link href="/#advantages">VÝHODY</Link></li>
+          <li><Link href="/#services">SLUŽBY</Link></li>
+          <li><Link href="/#reference">REFERENCE</Link></li>
           <li><Link href="/blog">BLOG</Link></li>
-          <li><Link href="#contact">KONTAKT</Link></li>
+          <li><Link href="/#contact">KONTAKT</Link></li>
         </ul>
       </nav>
       <div className={styles.ctaButton}>
