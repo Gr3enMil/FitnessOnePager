@@ -19,39 +19,42 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    width: 350px;
+    max-width: 400px;
+    gap: 1rem;
   }
   
   .title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0.5rem;
+    font-size: var(--fontSize3);
+    font-family: var(--fontBebas);
+    font-weight: 400;
+    text-align: left;
     text-transform: uppercase;
     width: 100%;
   }
   
   .imageWrapper {
-    width: 40%;
-    height: 80px;
+    width: 150px;
+    height: 170px;
     overflow: hidden;
-    margin-bottom: 0.5rem;
   }
   
   .excerpt {
-    width: 60%;
-    font-size: 0.9rem;
-    color: #666;
-    text-align: center;
+    width: 55%;
+    font-size: var(--fontSize4);
+    font-family: var(--fontOpen2);
+    color: #ffffff;
+    text-align: left;
   }
   
   .linkContainer {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   
   .blogLink {
-    color: rgb(167, 167, 167);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 400;
+    font-family: var(--fontOpen2);
+    font-size: 1.25rem;
   }
   

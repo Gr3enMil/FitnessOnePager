@@ -6,20 +6,21 @@
   }
   
   .backgroundOverlay {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 50%;
-    width: 100%; /* Širší než viewport, aby pokrylo více než 100% šířky */
-    height: 100%;
+    width: 100vw; /* Širší než viewport, aby pokrylo více než 100% šířky */
+    height: 100vh;
+    overflow: hidden;
     transform: translateX(-50%);
     z-index: -2;
   }
   
   .background {
     filter: brightness(0.3);
-    object-fit: cover;
   }
   
+
   .textContainer {
     position: absolute;
     top: 50%;
@@ -29,26 +30,22 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
     height: 100%;
   }
   
-  .logoTitle {
-    font-family: sans-serif;
-    font-size: 4rem;
-    margin: 0;
+  .title{
+    display: none;
   }
-  
   .subtitle {
-    font-size: 2rem;
-    margin: 0.5rem 0;
-    text-transform: uppercase;
+    display: none;
   }
   
   .quote {
-    font-style: italic;
-    font-size: 1.2rem;
-    max-width: 800px;
+    
+    font-size: 1.1rem;
+    max-width: 500px;
     margin: 2rem auto;
   }
   
@@ -63,4 +60,42 @@
     font-size: 3rem;
     color: white;
   }
+  
+  /* Animace */
+  /* .scrollButton:hover .arrow { */
+
+  .scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .mouse {
+    width: 35px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 25px; /* Oválný tvar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;  
+    color: white;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
   

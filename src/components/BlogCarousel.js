@@ -17,21 +17,20 @@ export default function BlogCarousel({ posts }) {
               <Image
                 src={post.image} // URL obrázku z frontmatteru
                 alt={`Image for ${post.title}`}
-                width={100}
-                height={100}
-                style={{ objectFit: 'cover' }}
+                width={150}
+                height={170}
               />
             </div>
-            <p className={styles.excerpt}>{post.content.slice(0, 50)}...</p>
+            <p className={styles.excerpt}>{post.content.slice(0, 200)}...</p>
             </Link>
           </div>
         ))}
       </div>
       <div className={styles.linkContainer}>
         <Link href="/blog">
-          <span className={styles.blogLink}>View all blog posts</span>
+          <span className={styles.blogLink}>více článků</span>
         </Link>
       </div>
     </div>
-  );
+  ); 
 }

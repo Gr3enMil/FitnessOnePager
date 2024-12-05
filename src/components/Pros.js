@@ -8,36 +8,35 @@ export default function Pros() {
       <div className={styles.prosContainer}>
         <div className={styles.proItem}>
           <Image
-            src="/pro1.png"
+            src="/images/pro1.png"
             alt="Odborné poradenství"
-            width={64}
-            height={64}
+            width={138}
+            height={138}
             className={styles.proImage}
           />
           <h3 className={styles.proTitle}>Odborné poradenství</h3>
           <p className={styles.proDescription}>
-            Bude vás vést někdo, kdo prošel touto cestou a byl ve vaší kůži.
+          Bude vás vést někdo, kdo prošel touto cestou a byl ve vaší kůži. Někdo, kdo  studiu lidského těla věnoval 5 let vysoké školy a neustále se snaží  znalosti posouvat nejen v teorii ale i v osobní praxi.
           </p>
         </div>
         <div className={styles.proItem}>
           <Image
-            src="/pro2.png"
+            src="/images/pro2.png"
             alt="Evidence-based přístup"
-            width={64}
-            height={64}
+            width={138}
+            height={138}
             className={styles.proImage}
           />
           <h3 className={styles.proTitle}>Evidence-based přístup</h3>
           <p className={styles.proDescription}>
-            Koučování je založeno na nejnovějších vědeckých výzkumech, což ti zaručí, že získáš nejúčinnější a nejaktuálnější strategie.
-          </p>
+          Koučování je založeno na nejnovějších vědeckých výzkumech, což ti zaručí, že  získáš nejúčinnější a nejaktuálnější strategie. Všechny techniky jsou  podložené vědou a reálnými výsledky klientů.          </p>
         </div>
         <div className={styles.proItem}>
           <Image
-            src="/pro3.png"
+            src="/images/pro3.png"
             alt="Celostní přístup"
-            width={64}
-            height={64}
+            width={138}
+            height={138}
             className={styles.proImage}
           />
           <h3 className={styles.proTitle}>Celostní přístup</h3>
@@ -47,10 +46,10 @@ export default function Pros() {
         </div>
         <div className={styles.proItem}>
           <Image
-            src="/pro4.png"
+            src="/images/pro4.png"
             alt="Edukace"
-            width={64}
-            height={64}
+            width={138}
+            height={138}
             className={styles.proImage}
           />
           <h3 className={styles.proTitle}>Edukace</h3>

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Image src="/logo.png" alt="Barbara Maiarino Personal Trainer" width={150} height={50} />
+        <Image src="/images/logo.png" alt="Barbara Maiarino Personal Trainer" width={150} height={50} />
       </div>
       <nav className={styles.nav}>
         <ul>
@@ -19,7 +19,13 @@ const Header = () => {
         </ul>
       </nav>
       <div className={styles.ctaButton}>
-        <Link href="#start" className={styles.button}>CHCI ZAČÍT!</Link>
+        <Link href="#contact" className={styles.button}>CHCI ZAČÍT!</Link>
+      </div>
+      <div className={styles.language}>
+        <select className={styles.dropdown}>
+          <option value="/cz">CZ</option>
+          <option value="/en">ENG</option>
+        </select>
       </div>
     </header>
   );

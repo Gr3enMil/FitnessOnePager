@@ -4,12 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
   
   .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 4rem;
+    font-size: var(--fontSize2);
+    font-weight: 400;
+    margin: 2rem 0 3rem 0;
+    font-family: var(--fontBebas);
   }
   
   .container {
@@ -21,24 +23,27 @@
    
   .imageWrapper {
     flex: 4;
-    min-width: 300px;
+    min-width: 400px;
+    overflow: hidden;
   }
   
   .mainImage {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.75);
+    transform-origin: 40% 25%;
   }
   
   .textWrapper {
     flex: 6;
     display: flex;
     flex-direction: column;
+    font-family: var(--fontOpen2);
   }
   
   .descriptionWrapper p{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .iconsWrapper {
@@ -46,6 +51,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-top: 2rem;
   }
   
   .iconItem {

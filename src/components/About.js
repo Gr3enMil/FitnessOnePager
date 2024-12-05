@@ -8,9 +8,9 @@ export default function About() {
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/barbara2.jpeg"
+            src="/images/barbara2.png"
             alt="Barbara Maiarino"
-            width={500}
+            width={400}
             height={700}
             className={styles.mainImage}
           />
@@ -40,23 +40,27 @@ export default function About() {
           </div>
           <div className={styles.iconsWrapper}>
             <div className={styles.iconItem}>
-              <Image src="/about1.png" alt="Deset let zkušeností" width={64} height={64} />
+              <Image src="/images/about1.png" alt="Deset let zkušeností" width={64} height={64} />
               <p>Vice jak deset let zkušeností s posilováním</p>
             </div>
             <div className={styles.iconItem}>
-              <Image src="/about2.png" alt="EVLS Prague 2023" width={64} height={64} />
+              <Image src="/images/about2.png" alt="EVLS Prague 2023" width={64} height={64}
+              style={{ objectFit: 'cover', objectPosition: "50% 0%" }}
+               />
               <p>Druhé místo na EVLS Prague 2023 v bikini fitness</p>
             </div>
             <div className={styles.iconItem}>
-              <Image src="/about3.png" alt="Silový trojboj" width={64} height={64} />
+              <Image src="/images/about3.png" alt="Silový trojboj" width={64} height={64}
+              style={{ objectFit: 'cover', objectPosition: "50% 0%" }}
+                 />
               <p>Zkušenosti se silovým trojbojem a pole dance</p>
             </div>
             <div className={styles.iconItem}>
-              <Image src="/about4.png" alt="VŠ vzdělání" width={64} height={64} />
+              <Image src="/images/about4.png" alt="VŠ vzdělání" width={64} height={64} />
               <p>VŠ vzdělání v oboru lidské fyziologie a neurobiologie</p>
             </div>
             <div className={styles.iconItem}>
-              <Image src="/about5.png" alt="Medaile v Aerial Arts" width={64} height={64} />
+              <Image src="/images/about5.png" alt="Medaile v Aerial Arts" width={64} height={64} />
               <p>Medailistka v Aerial Arts (Akrobacie na šále)</p>
             </div>
           </div>

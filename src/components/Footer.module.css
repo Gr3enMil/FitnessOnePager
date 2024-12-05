@@ -1,22 +1,22 @@
 /* Hlavní stylování pro footer */
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 20px 8% 20px 8%;
   background-color: #000; /* Černé pozadí */
   color: #fff;
   flex-wrap: wrap;
   text-align: center;
-  
+  margin: 4rem 0;
+  text-align: start;
 }
 
 .left {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 25%; /* Základní šířka pro 4 divy */
-  min-width: 200px; /* Zajistí minimální šířku divu */
+  min-width: 200px;
+  max-width: 250px; 
 }
 
 /* Stylování pro logo a jeho překrytí */
@@ -32,16 +32,33 @@
 .social {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-start;
   height: 120px;
-  min-width: 200px;
+  width: 200px;
   margin: 20px;
+}
+
+.contact p {
+  margin-bottom: 1rem;
+}
+
+.social {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.social a{
+  margin-right: 1rem;
 }
 
 .contactTitle,
 .locationTitle,
 .socialTitle {
-  font-weight: bold;
+  width: 100%;
+  font-weight: 400;
+  font-family: var(--fontBebas);
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 .contactLink,

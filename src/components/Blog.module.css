@@ -4,6 +4,7 @@
 }
 
 .blogHeading {
-  font-size: 2.2rem;
+  font-family: var(--fontBebas);
+  font-size: var(--fontSize2);
   margin-bottom: 3rem;
 }
