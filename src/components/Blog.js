@@ -4,8 +4,8 @@ import BlogCarousel from "./BlogCarousel.js";
 export default function Blog({ posts }) {
   return (
     <section id="about" className={styles.blogSection}>
-      <h2 className={styles.blogHeading}>BLOG</h2>
+      <h2 className={styles.title}>BLOG</h2>
       <BlogCarousel posts={posts}/>
     </section>
   );
-}  
+}   

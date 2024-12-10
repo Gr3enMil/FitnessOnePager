@@ -6,9 +6,9 @@ import { getPosts } from '../../lib/getPosts';
 export default async function BlogPage() {
   const posts = await getPosts();
 
-  return (
+  return ( 
     <div className={styles.blogContainer}>
-      <h1>Blog</h1>
+      <h1 className={styles.title}>Blog</h1>
       <ul className={styles.blogPost}>
         {posts.map((post) => {
           if (!post.nazev) {

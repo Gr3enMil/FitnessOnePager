@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.blogHeading {
+.title {
   font-family: var(--fontBebas);
   font-size: var(--fontSize2);
   margin-bottom: 3rem;
