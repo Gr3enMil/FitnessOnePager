@@ -1,24 +1,26 @@
-/* src/components/Header.module.css */
-
-
 
 .header {
+  width: 100%;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.headerContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding:  15px 0;
   background-color: #000;
   color: #fff;
-  max-width: 95%;
+  width: 90%;
   margin: 0 auto;
   font-weight: var(--weightHeavy);
   font-family: var(--fontOpen);
   font-size: var(--fontSize4);
 }
 
-.logo {
-  width: 20%;
-}
 
 .logo img {
   width: 100%;
@@ -27,8 +29,7 @@
 }
 
 .nav {
-  min-width: 850px;
-  width: 60%;
+  min-width: 820px;
   display: flex;
   justify-content: flex-end;
 }
@@ -70,7 +71,7 @@
 }
 
 .button:hover {
-  background-color: #e60000;
+  background-color: #9c0000;
 }
 
 .dropdown {

@@ -66,6 +66,10 @@
   color: #fff;
   text-decoration: none;
 }
+.contactLink {
+  text-decoration: underline;
+  
+}
 
 .contactLink:hover,
 .socialLink:hover {

@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       </head>
-      <body className="font-pussycat">
+      <body style={{overflow: 'visible'}}>
         <Header />
         <main>{children}</main>
         <Footer />

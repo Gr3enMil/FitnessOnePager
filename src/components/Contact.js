@@ -15,6 +15,8 @@ const Contact = () => {
     message: '',
     consent: false,
   });
+  const [isOk, setIsOk] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -41,7 +43,9 @@ const Contact = () => {
 
         if (response.ok) {
           setIsSubmitted(true);
+          setIsOk(true);
         } else {
+          setIsError(true);
           console.error('Failed to send email.');
         }
       } catch (error) {
@@ -53,7 +57,7 @@ const Contact = () => {
   return (
     <div className={styles.contactFormContainer} id='contact'>
       <h1 className={styles.title}>Konzultace zdarma</h1>
-      <form onSubmit={handleSubmit} className={styles.contactForm} aria-label="Formulář pro konzultaci zdarma">
+      <form id="form" onSubmit={handleSubmit} className={styles.contactForm} aria-label="Formulář pro konzultaci zdarma">
         <div className={styles.formRow}>
           <input
             type="text"
@@ -150,6 +154,10 @@ const Contact = () => {
         <button type="submit" className={styles.submitButton} disabled={!formData.consent || isSubmitted}>
           ODESLAT
         </button>
+        <div className={styles.message}>
+          {isOk && <p className={styles.successMessage}>Požadavek byl úspěšně odeslán.</p>}
+          {isError && <p className={styles.errorMessage}>Něco se pokazilo. Kontaktujte nás emailem.</p>}
+        </div>
       </form>
     </div>
   );

@@ -1,6 +1,13 @@
 .clientsContainer {
   text-align: center;
-  color: #FFFFFF
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Nastav výšku podle obsahu */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .title {
@@ -14,6 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
 }
 
 .arrow {
@@ -36,31 +44,43 @@
   transform: rotate(-135deg);
 }
 
+.clientContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
 .clientDetails {
   display: flex;
-  max-width: 850px;
+  max-width: 1100px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  gap: 4rem;
 }
 
 .clientImage {
-  width: 40%;
+  width: 360px;
+  height: 320px;
   overflow: hidden;
 }
 
 .clientInfo {
-  width: 50%;
+  width: 55%;
   text-align: left;
+  max-height: 320px;
 }
 
-.clientInfo h2 { /* name */
+.clientInfo h2 {
   font-size: var(--fontSize3);
   font-family: var(--fontBebas);
-  
 }
 
-.clientInfo h3 { /*title*/
+.clientInfo h3 {
   font-size: 1.7rem;
   font-family: var(--fontBebas);
 }
@@ -91,4 +111,65 @@
   background-color: red;
   border-radius: 50%;
   margin: 0 5px;
+}
+
+/* Keyframes pro animace */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.slideInFromLeft {
+  animation-name: slideInFromLeft;
+}
+
+.slideInFromRight {
+  animation-name: slideInFromRight;
+}
+
+.slideOutToLeft {
+  animation-name: slideOutToLeft;
+}
+
+.slideOutToRight {
+  animation-name: slideOutToRight;
 }

@@ -43,7 +43,7 @@ S pozdravem, Barbara`,
   try {
     await transporter.sendMail(mailOptionsToAdmin);
     await transporter.sendMail(mailOptionsToUser);
-
+    
     return new Response('Emails sent successfully', { status: 200 });
   } catch (error) {
     console.error('Error sending emails:', error);

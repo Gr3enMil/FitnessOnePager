@@ -1,6 +1,6 @@
 .logoContainer {
     position: relative;
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
     overflow: hidden;
   }
@@ -23,16 +23,17 @@
 
   .textContainer {
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
+    gap: 1rem;
   }
   
   .title{
@@ -43,10 +44,10 @@
   }
   
   .quote {
-    
+    font-family: var(--fontOpen2);
     font-size: 1.1rem;
-    max-width: 500px;
-    margin: 2rem auto;
+    max-width: 580px;
+    margin-bottom: 1rem;
   }
   
   .scrollButton {
@@ -85,6 +86,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    
   }
   
   .arrow {
@@ -96,6 +98,21 @@
     transform: rotate(-45deg);
     border-left: 2px solid white;
     border-bottom: 2px solid white;
+    transition: transform 0.3s ease;
+    
   }
+
+  .animate {
+    animation: ease moveArrow 1s infinite ;
+  }
+
+  @keyframes moveArrow {
+    0% {
+        transform: rotate(-45deg) translateY(-10px) translateX(10px);
+    }
+    100% {
+        transform: rotate(-45deg) translateY(0);
+    }
+}
   
   

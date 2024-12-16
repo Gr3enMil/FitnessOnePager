@@ -4,13 +4,19 @@ import Image from 'next/image';
 import styles from './Logo.module.css';
 
 export default function Logo() {
-  const handleClick = (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: 'smooth',
-    });
-  };
+  const arrowMove = () => {
+    const arrowElement = document.querySelector(`.${styles.arrow}`);
+    if (arrowElement) {
+      arrowElement.classList.add(styles.animate);
+    }
+  }
+
+  const arrowStop = () => {
+    const arrowElement = document.querySelector(`.${styles.arrow}`);
+    if (arrowElement) {
+        arrowElement.classList.remove(styles.animate);
+    }
+  }
 
   return (
     <div className={styles.logoContainer}>
@@ -26,9 +32,8 @@ export default function Logo() {
       </div>
       <div className={styles.textContainer}>
         <Image
-          src="/images/barbara.svg"
+          src="/images/logo2.png"
           alt='Barbara logo'
-
           width={950}
           height={220}
           className={styles.logo}
@@ -39,10 +44,10 @@ export default function Logo() {
           “Ať už je tvým cílem úbytek tělesného tuku, budování svalové hmoty, nebo se prostě jen naučit hýbat a posouvat ve všech oblastech života. Jsi na správném místě!”
         </p>
         <div className={styles.scroll}>
-          <div className={styles.mouse} onClick={e=>handleClick(e)}></div>
-          <div className={styles.arrow} onClick={e=>handleClick(e)}></div>
+          <div className={styles.mouse} onMouseEnter={arrowMove} onMouseLeave={arrowStop}></div>
+          <div className={styles.arrow} onMouseEnter={arrowMove}></div>
         </div>
       </div>
     </div>
   );
-}
+} 
