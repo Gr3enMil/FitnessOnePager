@@ -14,6 +14,7 @@
   font-size: var(--fontSize2);
   font-family: var(--fontBebas);
   color: white;
+  font-weight: 400;
   margin-bottom: 3rem;
 }
 
