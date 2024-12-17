@@ -1,118 +1,125 @@
 .logoContainer {
-    position: relative;
-    height: 75vh;
-    width: 100vw;
-    overflow: hidden;
-  }
-  
-  .backgroundOverlay {
-    position: relative;
-    top: 0;
-    left: 50%;
-    width: 100vw; /* Širší než viewport, aby pokrylo více než 100% šířky */
-    height: 100vh;
-    overflow: hidden;
-    transform: translateX(-50%);
-    z-index: -2;
-  }
-  
-  .background {
-    filter: brightness(0.3);
-  }
-  
-
-  .textContainer {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    gap: 1rem;
-  }
-  
-  .title{
-    display: none;
-  }
-  .subtitle {
-    display: none;
-  }
-  
-  .quote {
-    font-family: var(--fontOpen2);
-    font-size: 1.1rem;
-    max-width: 580px;
-    margin-bottom: 1rem;
-  }
-  
-  .scrollButton {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .arrow {
-    font-size: 3rem;
-    color: white;
-  }
-  
-  /* Animace */
-  /* .scrollButton:hover .arrow { */
-
-  .scroll {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 100px;
-    position: relative;
-    cursor: pointer;
-    margin-bottom: 1rem;
-  }
-  
-  .mouse {
-    width: 35px;
-    height: 60px;
-    border: 2px solid white;
-    border-radius: 25px; /* Oválný tvar */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 50%;  
-    color: white;
-    width: 12px;
-    height: 12px;
-    transform: rotate(-45deg);
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
-    transition: transform 0.3s ease;
-    
-  }
-
-  .animate {
-    animation: ease moveArrow 1s infinite ;
-  }
-
-  @keyframes moveArrow {
-    0% {
-        transform: rotate(-45deg) translateY(-10px) translateX(10px);
-    }
-    100% {
-        transform: rotate(-45deg) translateY(0);
-    }
+  position: relative;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  max-width: 1500px;
+  max-height: 1200px;
+  margin: 0 auto;
 }
+
+.backgroundOverlay {
   
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   
+  overflow: hidden;
+  z-index: -2;
+}
+
+.background {
+  width: 100%; /* Obrázek vyplní celý rodičovský kontejner */
+  height: auto;
+  filter: brightness(0.3);
+}
+
+
+.textContainer {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.title {
+  display: none;
+}
+
+.subtitle {
+  display: none;
+}
+
+.quote {
+  font-family: var(--fontOpen2);
+  font-size: 1.1rem;
+  max-width: 580px;
+  margin-bottom: 1rem;
+}
+
+.scrollButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.arrow {
+  font-size: 3rem;
+  color: white;
+}
+
+/* Animace */
+/* .scrollButton:hover .arrow { */
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.mouse {
+  width: 35px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 25px;
+  /* Oválný tvar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  color: white;
+  width: 12px;
+  height: 12px;
+  transform: rotate(-45deg);
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transition: transform 0.3s ease;
+
+}
+
+.animate {
+  animation: ease moveArrow 1s infinite;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: rotate(-45deg) translateY(-10px) translateX(10px);
+  }
+
+  100% {
+    transform: rotate(-45deg) translateY(0);
+  }
+}

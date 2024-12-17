@@ -9,6 +9,8 @@
   text-align: center;
   margin: 4rem 0;
   text-align: start;
+  max-width: 2500px;
+  margin: 4rem auto;
 }
 
 .left {
