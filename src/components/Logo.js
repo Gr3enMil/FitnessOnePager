@@ -24,9 +24,7 @@ export default function Logo() {
         <Image
           src="/images/barbara.png"
           alt="Logo background"
-          layout='fill'
-          objectFit='cover'
-          objectPosition="50% 36%"
+          fill
           className={styles.background}
         />
       </div>

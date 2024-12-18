@@ -6,16 +6,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BlogCarousel from '@/components/BlogCarousel';
 import { getPosts } from '@/lib/getPosts';
+import ReactMarkdown from 'react-markdown';
 
 async function getPostByNazev(nazev) {
   if (!nazev) {
     console.log("Nazev je nedefinován");
     return null;
   }
-
   const filePath = path.join(process.cwd(), 'src/content/blog', `${nazev}.md`);
-  
-
   try {
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const { data, content } = matter(fileContents);
@@ -80,9 +78,10 @@ export default async function BlogPostPage({ params }) {
           )}
 
           {/* Obsah příspěvku */}
-          <div className={styles.blogText}>
+          <ReactMarkdown>{post.content}</ReactMarkdown>
+          {/*<div className={styles.blogText}>
             <p>{post.content}</p>
-          </div>
+          </div>*/}
         </div>
       </article>
       <BlogCarousel posts={posts} />
