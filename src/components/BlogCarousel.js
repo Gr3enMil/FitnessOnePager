@@ -18,7 +18,7 @@ export default function BlogCarousel({ posts }) {
                 src={post.image} // URL obrázku z frontmatteru
                 alt={`Image for ${post.title}`}
                 width={150}
-                height={170}
+                height={180}
               />
             </div>
             <p className={styles.excerpt}>{post.content.slice(0, 200)}...</p>

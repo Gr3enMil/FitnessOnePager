@@ -17,9 +17,10 @@ collections:
     fields:
       - { label: "Id", name: "id", widget: "string", hint: "Pořadové číslo příspěvku" }
       - { label: "Nazev", name: "nazev", widget: "string", hint: "např.: jak-napsat-blogovy-clanek" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Title", name: "title", widget: "string", hint: "Nadpis, co se zobrazí"}
+      - { label: "Typ", name: "typ", widget: "string", hint: "trenink/strava/lifestyle/recepty" }
+      - { label: "Body", name: "body", widget: "markdown", hint: "Sem vlož obsah článku i s obrázky, styluj pomocí nástrojů" }
+      - { label: "Image", name: "image", widget: "image", hint: "Image, který se zobrazí v seznamu příspěvků, poměr rozlišení 5x6px"}
 
   - name: "clients"
     label: "Clients"

@@ -2,6 +2,7 @@
 id: 6
 nazev: jak-se-zbavit-prujmu
 title: Jak se zbavit průjmu?
+typ: recepty
 image: /uploads/client1.png
 ---
 P﻿růjmu se zbavíme nejsnáze tak, že vypijeme odvar z čerstvé placenty. Tento pradávný recept se předává z generace na generaci. Původní verze vznikla kolem 5. století př.n.l. ve střední Evropě. Bezmozci jsou všude na světě, ale ve střední Evropě je snad jejich hnízdo, takže kde jinde by to taky mělo vzniknout...

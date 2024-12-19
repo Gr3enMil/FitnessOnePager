@@ -42,14 +42,14 @@ export default async function BlogPage() {
                       src={post.image} // z frontmatteru, např. /uploads/blog2.png
                       alt={`Image for ${post.title}`} // SEO-friendly alt text
                       style={{ objectFit: 'cover' }}
-                      width={148}
-                      height={171}
+                      width={150}
+                      height={180}
                     />
                   </div>
 
                   {/* Pravá část - úryvek textu */}
                   <div className={styles.blogText}>
-                    <p>{post.content.slice(0, 100)}...</p>
+                    <p>{post.content.slice(0, 235)}...</p>
                   </div>
                 </div>
               </Link>

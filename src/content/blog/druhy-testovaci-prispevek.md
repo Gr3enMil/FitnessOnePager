@@ -2,6 +2,7 @@
 id: "9"
 nazev: druhy-testovaci-prispevek
 title: Druhý testovací příspěvek
+typ: strava
 image: /uploads/test3.png
 ---
 ## S﻿háníte dárek, který skutečně potěší?

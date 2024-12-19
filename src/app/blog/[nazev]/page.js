@@ -7,6 +7,7 @@ import Link from 'next/link';
 import BlogCarousel from '@/components/BlogCarousel';
 import { getPosts } from '@/lib/getPosts';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 async function getPostByNazev(nazev) {
   if (!nazev) {
@@ -24,7 +25,6 @@ async function getPostByNazev(nazev) {
   }
 }
 
-// Funkce pro dynamické generování cest na základě dostupných `nazev`
 export async function generateStaticParams() {
   const postsDirectory = path.join(process.cwd(), 'src/content/blog');
   const filenames = fs.readdirSync(postsDirectory);
@@ -33,16 +33,13 @@ export async function generateStaticParams() {
     nazev: filename.replace(/\.md$/, ''),
   }));
 
-  
   return paths;
 }
 
 export default async function BlogPostPage({ params }) {
   const { nazev } = params;
-  
-
   const post = await getPostByNazev(nazev);
-  const posts = await getPosts(); // Načítáme všechny příspěvky
+  const posts = await getPosts();
 
   if (!post) {
     return (
@@ -55,36 +52,21 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <div className={styles.blogContainer}>
-      <Link href="/blog" className={styles.blogLink}>
-        &lt; ZPĚT NA SEZNAM
-      </Link>
-
       <article className={styles.blogPost}>
-        <h1 style={{ textTransform: 'uppercase', fontWeight: 'bold', marginBottom: '1rem' }}>
-          {post.data.title}
-        </h1>
-
-        <div className={styles.blogContent}>
-          {/* Obrázek */}
-          {post.data.image && (
-            <div className={styles.blogImage}>
-              <Image
-                src={post.data.image} // cesta k obrázku z frontmatteru
-                alt={`Image for ${post.data.title}`} // SEO-friendly alt text
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          )}
-
-          {/* Obsah příspěvku */}
-          <ReactMarkdown>{post.content}</ReactMarkdown>
-          {/*<div className={styles.blogText}>
-            <p>{post.content}</p>
-          </div>*/}
-        </div>
+          <Link href="/blog" className={styles.blogLink}>
+            &lt; ZPĚT NA SEZNAM ČLÁNKŮ
+          </Link>
+          <span className={styles.blogTyp}>{post.data.typ}</span>
+          <Image
+            src={post.data.image}
+            alt={`Image for ${post.data.title}`}
+            style={{ objectFit: 'cover' }}
+            width={150}
+            height={180}
+          />
+          <h1>{post.data.title}</h1>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown> 
       </article>
-      <BlogCarousel posts={posts} />
     </div>
   );
 }
