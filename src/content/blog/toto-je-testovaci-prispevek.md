@@ -2,7 +2,7 @@
 id: "8"
 nazev: toto-je-testovaci-prispevek
 title: Toto je testovací příspěvek
-typ: trenink
+typ: trénink
 image: /uploads/screenshot-from-2024-12-14-11-38-49.png
 ---
 T﻿oto je první odstavec. Je psaný obyčejně. Skládá se ze tří vět.

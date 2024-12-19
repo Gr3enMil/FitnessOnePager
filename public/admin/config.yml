@@ -15,10 +15,10 @@ collections:
     create: true
     slug: "{{fields.nazev}}"
     fields:
-      - { label: "Id", name: "id", widget: "string", hint: "Pořadové číslo příspěvku" }
+      - { label: "Id", name: "id", widget: "string", hint: "Pořadové číslo příspěvku, nejvýše se zobrazují vyšší čísla (novější příspěvky)" }
       - { label: "Nazev", name: "nazev", widget: "string", hint: "např.: jak-napsat-blogovy-clanek" }
       - { label: "Title", name: "title", widget: "string", hint: "Nadpis, co se zobrazí"}
-      - { label: "Typ", name: "typ", widget: "string", hint: "trenink/strava/lifestyle/recepty" }
+      - { label: "Typ", name: "typ", widget: "string", hint: "trénink/strava/lifestyle/recepty" }
       - { label: "Body", name: "body", widget: "markdown", hint: "Sem vlož obsah článku i s obrázky, styluj pomocí nástrojů" }
       - { label: "Image", name: "image", widget: "image", hint: "Image, který se zobrazí v seznamu příspěvků, poměr rozlišení 5x6px"}
 
@@ -29,7 +29,7 @@ collections:
     slug: "{{fields.id}}" # You can also use another unique field if preferred
     fields:
       - { label: "Id", name: "id", widget: "string", hint: "Pořadové číslo klienta" }
-      - { label: "Photo", name: "photo", widget: "image", hint: "Nahrát fotografii klienta" }
+      - { label: "Photo", name: "photo", widget: "image", hint: "Nahrát fotografii klienta, 360x320px" }
       - { label: "Name", name: "name", widget: "string", hint: "Jméno klienta" }
       - { label: "Title", name: "title", widget: "string", hint: "Nadpis, např.: Zpevnění těla" }
       - { label: "Odstavec", name: "paragraph1", widget: "markdown", hint: "První odstavec textu" }

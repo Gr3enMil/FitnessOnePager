@@ -2,7 +2,7 @@
 id: 2
 nazev: escrzyaie
 title: ěščřžýáíé
-typ: zdravi
+typ: lifestyle
 image: /uploads/matysek.png
 ---
 T﻿estovací subjekt.

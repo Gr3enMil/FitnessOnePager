@@ -15,6 +15,7 @@ export async function getPosts() {
       id: data.id,
       nazev: data.nazev, // Zajišťujeme, že 'nazev' je správně zahrnut
       title: data.title,
+      typ: data.typ,
       image: data.image,
       content: postContent,
       slug: filename.replace(/\.md$/, ''), // Přidáváme slug, pokud by byl potřeba
