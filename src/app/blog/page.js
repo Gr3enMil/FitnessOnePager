@@ -7,7 +7,6 @@ export default async function BlogPage() {
 
   return (
     <div className={styles.blogContainer}>
-      {/* Záhlaví */}
       <h1 className={styles.title}>Blog</h1>
       <BlogPageClient posts={posts} />
     </div>

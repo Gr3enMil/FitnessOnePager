@@ -77,3 +77,18 @@
 .socialLink:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1100px) {
+  .left {
+    display: none;
+  }
+  .contact {
+    margin-left: 4rem;
+  }
+  .location {
+    margin-right: 0;
+  }
+  .social {
+    margin-left: 0;
+  }
+}

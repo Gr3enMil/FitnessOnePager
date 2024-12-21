@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 
 import { useState } from "react";
 import Image from "next/image";
@@ -15,7 +15,7 @@ export default function Clients({ clients }) {
     setTimeout(() => {
       setCurrentClientIndex((prevIndex) =>
         prevIndex === 0 ? clients.length - 1 : prevIndex - 1
-      );
+      ); 
       setAnimationClass(styles.slideInFromLeft);
     }, 500);
   };

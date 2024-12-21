@@ -84,3 +84,32 @@
   color: rgb(255, 0, 0);
   opacity: 1;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.pageButton {
+  padding: 10px 15px;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: var(--fontOpen);
+  font-weight: 700;
+  font-size: var(--fontSize4);
+}
+
+.pageButton:hover {
+  color: #555;
+}
+
+.pageButton.active {
+  color: #ff0000;
+  opacity: 1;
+  font-weight: bold;
+}

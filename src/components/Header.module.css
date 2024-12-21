@@ -10,7 +10,7 @@
 .headerContainer {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding:  15px 0;
   background-color: #000;
   color: #fff;
@@ -21,6 +21,9 @@
   font-size: var(--fontSize4);
 }
 
+.logo {
+  margin-right: 5rem;
+}
 
 .logo img {
   width: 100%;

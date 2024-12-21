@@ -89,4 +89,11 @@
     font-size: 0.85rem;
   }
   
-  
+@media (max-width: 1100px) {
+  .servicesContainer {
+    max-width: 900px;
+  }
+  .serviceCard {
+    width: 385px;
+  }
+}

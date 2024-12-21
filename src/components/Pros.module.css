@@ -14,7 +14,7 @@
   
   .prosContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     flex-wrap: wrap;
     gap: 2rem;
   }
@@ -54,3 +54,13 @@
     line-height: 1.6;
   }
   
+  @media (max-width: 1100px) {
+    .prosContainer {
+      gap: 1rem;
+      margin: 0 3rem;
+    }
+    .proItem {
+      min-width: 350px;
+      margin-bottom: 2rem;
+    }
+  }

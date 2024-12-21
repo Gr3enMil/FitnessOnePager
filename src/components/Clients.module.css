@@ -26,7 +26,7 @@
 }
 
 .arrow {
-  margin-right: 5rem;
+  margin-right: 3rem;
   font-size: 2rem;
   cursor: pointer;
   padding: 20px;
@@ -36,7 +36,7 @@
 }
 
 .arrow2 {
-  margin-left: 5rem;
+  margin-left: 3rem;
   font-size: 2rem;
   cursor: pointer;
   padding: 20px;
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
 }
@@ -61,7 +61,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .clientImage {
@@ -79,11 +79,14 @@
 .clientInfo h2 {
   font-size: var(--fontSize3);
   font-family: var(--fontBebas);
+  line-height: 2.8rem;
 }
 
 .clientInfo h3 {
   font-size: 1.7rem;
+  opacity: 0.7;
   font-family: var(--fontBebas);
+  line-height: 2rem;
 }
 
 .clientInfo p {
@@ -173,4 +176,17 @@
 
 .slideOutToRight {
   animation-name: slideOutToRight;
+}
+
+@media (max-width: 1100px) {
+  .clientDetails {
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .clientInfo {
+    width: 100%;
+  }
+  .navigation {
+    margin-bottom: 3rem;
+  }
 }

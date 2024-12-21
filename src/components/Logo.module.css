@@ -3,8 +3,8 @@
   height: 75vh;
   width: 100vw;
   overflow: hidden;
-  max-width: 1500px;
-  max-height: 1200px;
+  max-width: 2560px;
+  max-height: 1150px;
   margin: 0 auto;
 }
 
@@ -23,12 +23,11 @@
   height: auto;
   filter: brightness(0.3);
   object-fit: cover;
-  object-position: 50% 36%;
+  object-position: 50% 30%;
 }
 
-
 .textContainer {
-  position: absolute;
+  position: absolute; 
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
