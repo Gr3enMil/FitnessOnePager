@@ -122,3 +122,32 @@
     transform: rotate(-45deg) translateY(0);
   }
 }
+
+@media (max-width: 900px) {
+  .logo {
+    max-width: 200%;
+    height: 25%;
+  }
+}
+@media (max-width: 701px) {
+  .quote {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 590px) {
+  .textContainer {
+    width: 80%;
+  }
+  .logo {
+    max-width: 110%;
+    height: 20%;
+  }
+}
+@media (max-width: 460px) {
+  .logo {
+    height: 13%;
+  }
+  .textContainer p {
+    font-size: 0.9rem;
+  }
+}

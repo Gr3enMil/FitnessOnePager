@@ -7,11 +7,22 @@ import { useState } from 'react';
 const Header = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [language, setLanguage] = useState('CZ');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLanguageEN = () => {
+    if (language === 'CZ') {
+      setLanguage('ENG');
+    } 
+  }
+  const handleLanguageCZ = () => {
+    if (language === 'ENG') {
+      setLanguage('CZ');
+    } 
+  }
   const handleClose = () => {
     setIsMenuOpen(false);
   }
@@ -49,10 +60,13 @@ const Header = () => {
           <div className={styles.ctaButton} onClick={handleClose}>
             <Link href="#contact" className={styles.button} onClick={e => handleScroll(e)}>CHCI ZAČÍT!</Link>
           </div>
-          <select className={styles.dropdown}>
-            <option value="/cz">CZ</option>
-            <option value="/en">ENG</option>
-          </select>
+          <div className={styles.dropdown}>
+            <div className={styles.dropdownSelected}>{language}<div className={styles.arrow}>{">"}</div></div>
+            <ol className={styles.dropdownList}>
+              <li className={styles.dropdownItem} onClick={handleLanguageCZ}>CZ</li>
+              <li className={styles.dropdownItem} onClick={handleLanguageEN}>ENG</li>
+            </ol>
+          </div>
           <div className={`${styles.czenhidden} ${isMenuOpen ? styles.czen : ""}`}>
             <Link href="#" className={styles.link1}>CZ</Link>
             <Link href="#" className={styles.link2}>ENG</Link>

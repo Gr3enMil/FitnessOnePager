@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/image'; 
 import styles from './BlogCarousel.module.css';
 
 export default function BlogCarousel({ posts }) {
@@ -21,7 +21,7 @@ export default function BlogCarousel({ posts }) {
                 height={180}
               />
             </div>
-            <p className={styles.excerpt}>{post.content.slice(0, 200)}...</p>
+            <p className={styles.excerpt}>{post.content.slice(0, 180)}...</p>
             </Link>
           </div>
         ))}

@@ -1,10 +1,12 @@
 
 .header {
   width: 100%;
-  background-color: #000;
+  /*background-color: #000;*/
   position: sticky;
   top: 0;
   z-index: 1000;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
 }
 
 .headerContainer {
@@ -12,7 +14,6 @@
   align-items: center;
   justify-content: center;
   padding:  15px 0;
-  background-color: #000;
   color: #fff;
   width: 90%;
   margin: 0 auto;
@@ -35,6 +36,7 @@
   min-width: 820px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .nav ul {
@@ -78,10 +80,49 @@
 }
 
 .dropdown {
-  border: none;
-  background-color: black;
-  font-family: var(--fontOpen);
-  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+.dropdownSelected {
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+}
+
+.dropdownList {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  display: none; /* Skryté defaultně */
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdownList {
+  display: block; /* Zobrazí se při hover */
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: transparent;
+}
+
+.arrow {
+  transform: rotate(90deg);
+  margin-left: 1rem;
+}
+.option {
+  background-color: transparent;
 }
 
 .line {
@@ -104,6 +145,11 @@
   .header {
     flex-direction: column;
     justify-content: flex-start;
+  }
+  .headerContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 0;
   }
   .topBar {
     display: flex;
@@ -146,7 +192,7 @@
     transform: rotate(-45deg) translate(5px, -11.5px);
   }
   .nav.navOpen {
-    display: flex;
+    display: flex; 
     flex-direction: column;
   }
   .dropdown {
