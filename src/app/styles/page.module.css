@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  overflow: visible;
+  overflow: hidden;
   box-sizing: border-box;
 }
 

@@ -44,7 +44,7 @@ export default function Clients({ clients }) {
                 alt={`Photo of ${clients[currentClientIndex].name}`}
                 width={360}
                 height={320}
-                className={styles.image}
+                className={styles.image} 
               />
             </div>
             <div className={styles.clientInfo}>

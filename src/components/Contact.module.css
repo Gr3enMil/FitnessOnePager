@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 700px;
+    width: 100%;
     gap: 1.5rem;
 }
 
@@ -69,7 +69,7 @@
 
 .customBox {
     display: inline-block;
-    width: 1.5rem;
+    min-width: 1.5rem;
     height: 1.5rem;
     background-color: white;
     margin: 0 1rem;
@@ -112,4 +112,21 @@
 }
 .errorMessage {
     color: rgb(255, 51, 51);
+}
+
+@media (max-width: 750px) {
+    .contactFormContainer {
+        width: 90%;
+    }
+    .consentLabel {
+        font-size: 0.8rem;
+    }
+    .formRow {
+        flex-direction: column;
+    }
+    .submitButton {
+        align-self: center;
+        width: 100%;
+        max-width: 450px;
+    }
 }

@@ -14,6 +14,14 @@ export default function About() {
             height={700}
             className={styles.mainImage}
           />
+          
+          <Image
+            src="/images/barbara3.png"
+            alt="Barbara Maiarino"
+            width={400}
+            height={300}
+            className={styles.sideImage}
+          />
         </div>
         <div className={styles.textWrapper}>
           <p>

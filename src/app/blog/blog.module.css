@@ -113,3 +113,11 @@
   opacity: 1;
   font-weight: bold;
 }
+
+.blogItem {
+  transition: ease-in-out 0.5s;
+}
+
+.blogItem:hover {
+  transform: scale(1.05);
+} 

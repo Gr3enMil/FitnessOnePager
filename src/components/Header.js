@@ -2,10 +2,45 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
+
+const useScrollHandler = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [scrollTarget, setScrollTarget] = useState(null);
+
+  // Sleduj změny `pathname` a prováděj scroll po dokončení navigace
+  useEffect(() => {
+    if (scrollTarget && pathname === scrollTarget.page) {
+    setTimeout(() => {
+      const element = document.getElementById(scrollTarget.id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        setScrollTarget(null); // Resetuj cíl po scrollování
+      }
+    }, 100);
+    }
+  }, [pathname, scrollTarget]);
+
+  // Funkce na navigaci a případný scroll
+  const handleScroll = (e, targetPage, elementId) => {
+    e.preventDefault();
+    if (pathname !== targetPage) {
+      setScrollTarget({ page: targetPage, id: elementId });
+      router.push(targetPage); // Naviguj na cílovou stránku
+    } else {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+  return { handleScroll };
+};
+
 
 const Header = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState('CZ');
 
@@ -13,7 +48,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleLanguageEN = () => {
+  const handleLanguageEN = () => { // trochu hloupe rozdeleni, slo to udelat v jednom
     if (language === 'CZ') {
       setLanguage('ENG');
     } 
@@ -27,11 +62,7 @@ const Header = () => {
     setIsMenuOpen(false);
   }
 
-  const handleScroll = (e) => {
-    e.preventDefault();
-    const element = document.getElementById('contact');
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
+  const { handleScroll } = useScrollHandler();
 
   return (
     <header className={styles.header}>
@@ -58,13 +89,13 @@ const Header = () => {
             <li onClick={handleClose}><Link href="/#contact">KONTAKT</Link></li>
           </ul>
           <div className={styles.ctaButton} onClick={handleClose}>
-            <Link href="#contact" className={styles.button} onClick={e => handleScroll(e)}>CHCI ZAČÍT!</Link>
+            <div className={styles.button} onClick={e => handleScroll(e, "/", "contact")}>CHCI ZAČÍT!</div>
           </div>
           <div className={styles.dropdown}>
             <div className={styles.dropdownSelected}>{language}<div className={styles.arrow}>{">"}</div></div>
             <ol className={styles.dropdownList}>
-              <li className={styles.dropdownItem} onClick={handleLanguageCZ}>CZ</li>
-              <li className={styles.dropdownItem} onClick={handleLanguageEN}>ENG</li>
+              {(language === "ENG") && <li className={styles.dropdownItem} onClick={handleLanguageCZ}>CZ</li>}
+              {(language === "CZ") && <li className={styles.dropdownItem} onClick={handleLanguageEN}>ENG</li>}
             </ol>
           </div>
           <div className={`${styles.czenhidden} ${isMenuOpen ? styles.czen : ""}`}>

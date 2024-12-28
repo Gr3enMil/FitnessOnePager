@@ -91,7 +91,7 @@ export default function Services() {
                 alt="Tréninkový plán"
                 width={400}
                 height={230}
-                className={styles.serviceImage}
+                className={styles.serviceImage} 
               />
             </div>
             <div className={styles.textWrapper}>

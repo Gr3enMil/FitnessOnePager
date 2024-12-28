@@ -37,6 +37,7 @@
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
+    font-weight: 400;
   }
 
   .serviceTitle2 {
@@ -50,6 +51,7 @@
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
+    font-weight: 400;
   }
   
   .serviceContent {
@@ -95,5 +97,20 @@
   }
   .serviceCard {
     width: 385px;
+  }
+}
+
+@media (max-width: 400px) {
+  .serviceCard {
+    width: 350px;
+  }
+  .serviceTitle {
+    font-size: 1.6rem; 
+    top: 17%;
+    left: 31%;
+  }
+  .serviceTitle2 {
+    font-size: 1.6rem;   
+    left: 14%; 
   }
 }

@@ -92,3 +92,31 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+  }
+  .contact {
+    margin: 0;
+    align-items: center;
+  }
+  .location {
+    align-items: center;
+    margin: 0;
+  }
+  .social {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+  .socialTitle {
+    margin-bottom: 0;
+  }
+}
