@@ -12,7 +12,7 @@ import { getClients } from "@/lib/getClients";
 
 
 export default async function Home() {
-
+  
   const posts = await getPosts(); // Načítá příspěvky na serverové straně
   const latestPosts = posts.slice(0, 2);
 

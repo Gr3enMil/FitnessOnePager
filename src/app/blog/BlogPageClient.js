@@ -34,7 +34,7 @@ export default function BlogPageClient({ posts }) {
     <div>
       <div className={styles.navMenu}>
         <Link href="/" className={styles.blogLink}>
-          &lt; ZPĚT NA HOMEPAGE
+          &lt; <span className={styles.spanText}>ZPĚT NA HOMEPAGE</span>
         </Link>
         <div className={styles.filter}>
           {/* Tlačítka pro filtrování */}
@@ -103,7 +103,7 @@ export default function BlogPageClient({ posts }) {
                   />
                 </div>
                 <div className={styles.blogText}>
-                  <p>{post.content.slice(0, 100)}...</p>
+                  <p>{post.content.slice(0, 200)}...</p>
                 </div>
               </div>
             </Link>

@@ -13,13 +13,15 @@ const useScrollHandler = () => {
   // Sleduj změny `pathname` a prováděj scroll po dokončení navigace
   useEffect(() => {
     if (scrollTarget && pathname === scrollTarget.page) {
-    setTimeout(() => {
+    
       const element = document.getElementById(scrollTarget.id);
       if (element) {
+        const rect = element.getBoundingClientRect();
+        console.log('Calculated scroll position:', window.scrollY + rect.top);
         element.scrollIntoView({ behavior: 'smooth' });
         setScrollTarget(null); // Resetuj cíl po scrollování
       }
-    }, 100);
+    
     }
   }, [pathname, scrollTarget]);
 
@@ -32,9 +34,12 @@ const useScrollHandler = () => {
     } else {
       const element = document.getElementById(elementId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
+        const rect = element.getBoundingClientRect();
+        const offset = window.innerWidth < 751 ? 550 : 0;
+        const scrollPosition = window.scrollY + rect.top - offset;
+        // ziskani elementu, nastaveni variabilniho offsetu, vypocet scrollu
+        window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+      } }
   };
   return { handleScroll };
 };
