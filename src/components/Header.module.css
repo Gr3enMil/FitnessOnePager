@@ -1,6 +1,7 @@
-
 .header {
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -198,6 +199,7 @@
     display: flex; 
     flex-direction: column;
     height: 100%;
+    padding-top: 2rem;
   }
   .dropdown {
     display: none;
@@ -205,7 +207,6 @@
   .czen {
     display: flex;
     align-self: center;
-    
   }
   .link1, .link2 {
     font-family: var(--fontOpen);

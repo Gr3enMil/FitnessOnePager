@@ -155,13 +155,14 @@
     margin: 0;
     min-width: 350px;
   }
-  .blogLink {
-    position: absolute;
-    left: 5%;
-    top: 11.5%;
-  }
   .navMenu {
     justify-content: center;
+    position: relative;
+  }
+  .blogLink {
+    position: absolute;
+    left: 0%;
+    top: -240%;
   }
 }
 
@@ -179,7 +180,8 @@
     min-width: 300px;
   }
   .blogLink {
-    left: 3%;
+    margin-left: 1rem;
+    top: -330%;
   }
   .filterButton {
     padding: 5px 10px;
