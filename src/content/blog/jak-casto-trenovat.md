@@ -5,43 +5,15 @@ title: JAK ČASTO MÁM TRÉNOVAT?
 typ: trénink
 image: /uploads/jak-často-mám-trénovat.jpg
 ---
-​​ČASTOU OTÁZKOU, POKUD JDE O PROGRAMOVÁNÍ TRÉNINKŮ JE
+​​ČASTOU OTÁZKOU, POKUD JDE O PROGRAMOVÁNÍ TRÉNINKŮ JE:  "Jak si mám rozdělit trénink / jaký tréninkový split je nejlepší?" Existuje tolik způsobů, jak sestavit trénink... Fullbody trénink, “Bro split” , push-pull-legs, vršek- spodek , speciální tréninky na konkrétní skill/ sport a další. Ale jaké rozložení je to nejlepší? No, popravdě řečeno - žádné není nutně lepší. Než si vybereme, měli bychom si nejprve položit pár zásadních otázek.
 
+#### CO JE PRO MĚ REÁLNÉ?
 
-
-"Jak si mám rozdělit trénink / jaký tréninkový split je nejlepší?"
-
-
-
-Existuje tolik způsobů, jak sestavit trénink 
-
-\- Fullbody trénink, “Bro split” , push-pull-legs, vršek- spodek , speciální tréninky na konkrétní skill/ sport a další
-
-
-
-Ale jaké rozložení je to nejlepší? 
-
-No, popravdě řečeno - žádné není nutně lepší.
-
-
-
-Než si vybereme, měli bychom si nejprve položit pár zásadních otázek.
-
-
-
-CO JE PRO MĚ REÁLNÉ?
-
-To je nejdůležitější aspekt.
-
-Pokud je "nejlepším rozdělením" pětidenní program, ale vzhledem k tvému pracovnímu rozvrhu a rodinným závazkům zvládneš reálně jen tři dny - pak pětidenní rozdělení není nejlepší.
-
-
+To je nejdůležitější aspekt. Pokud je "nejlepším rozdělením" pětidenní program, ale vzhledem k tvému pracovnímu rozvrhu a rodinným závazkům zvládneš reálně jen tři dny - pak pětidenní rozdělení není nejlepší.
 
 Kolik dní si můžeš reálně dovolit? - ne kolik dní chceš trénovat nebo si myslíš, že bys měl trénovat, ale kolik dní budeš skutečně trénovat.
 
-
-
-CO TĚ BUDE NEJVÍC BAVIT?
+#### CO TĚ BUDE NEJVÍC BAVIT?
 
 Tohle je často přehlížený faktor při hledání "optimálního" tréninku, ale opět ho nelze ignorovat.
 
@@ -51,9 +23,7 @@ Pokud nesnášíš myšlenku na fullbody trénink, pravděpodobně bys ho neměl
 
 Tvůj tréninkový plán tě musí bavit, protože sebedokonalejší plán ti moc nepomůže, pokud tě nebude bavit, a proto ho nebudeš dodržovat.
 
-
-
-FREKVENCE
+#### FREKVENCE
 
 Teď když víš, kolik dní budeš trénovat, je čas si rozdělit objem pro jednotlivé části těla na celý týden.
 
@@ -61,11 +31,7 @@ Obecné pravidlo pro většinu začátečníků je, že chceš každou svalovou 
 
 (to je velmi základní výchozí bod)
 
-
-
-Možná si myslíš, že jsi pokročilí a v důsledku toho potřebuješ určité svalové skupiny zasahovat častěji (například hýždě), ale u většiny z vás je pravděpodobné, že tak pokročilí nejste.
-
-
+Možná si myslíš, že jsi pokročilý a v důsledku toho potřebuješ určité svalové skupiny zasahovat častěji (například hýždě), ale u většiny z vás je pravděpodobné, že tak pokročilí nejste.
 
 Mé (osobní) oblíbené rozdělení k dosažení výše uvedeného jsou:
 
@@ -75,39 +41,25 @@ Mé (osobní) oblíbené rozdělení k dosažení výše uvedeného jsou:
 
 5 tréninkových dnů: Push-Pull-Nohy-Vršek-Nohy
 
-
-
 Začni základním tréninkovým plánem, dlouho se v něm opravdu zdokonaluj, a až ho budeš dělat několik měsíců/ let, pak můžeš uvažovat o zvýšení frekvence.
 
-
-
-OBJEM
+#### OBJEM
 
 Jak už jsem zmínila, je obecně doporučeno začít s objemem 10-20 sérií na svalovou partii za týden.
 
-
-
 To ale taky není tak jednoznačné, některé studie ukazují, že i ze 3 sérií týdně (do selhání) dochází ke svalové hypertrofii. 
-
-
 
 V ideálním případě začni s nižším počtem sérií a zhodnoť, jaké množství dokážeš regenerovat. Pokud zjistíte, že tě neustále něco bolí, možná toho děláš příliš hodně (nebo se podívej na další faktory, jako jsou kalorie, bílkoviny, spánek, stres, hydratace atd.) Pokud s cítíš dobře, můžeš přidat víc sérií napříč cviky.
 
-
-
 Menší svalové partie zvládnou i větší objem (například delty), zatímco větší, jako jsou například kvadricepsy, mohou potřebovat méně.
 
-
-
-INTENZITA
+#### INTENZITA
 
 Žádný tréninkový plán nebude fungovat, pokud ho budete cvičit dlouhodobě.
 
 A většina plánů, pokud splňují výše uvedené podmínky, přinesou výsledky v podobě nárůstu síly a svalové hmoty, pokud se prostě dostaneš do posilovny a začneš trénovat.
 
 Nauč se, jak provádět série blízko k selhání, a čas od času experimentuj s prováděním sérií až do selhání, abys mohl posoudit, jak moc skutečně makáš. 
-
-
 
 Cílem hry je progresivní přetížení - vykonávání větší práce v průběhu času buď přidáváním váhy, přidáváním opakování, nebo přidáváním sérií.
 
