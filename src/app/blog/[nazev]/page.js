@@ -4,7 +4,6 @@ import matter from 'gray-matter';
 import styles from './slug.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import BlogCarousel from '@/components/BlogCarousel';
 import { getPosts } from '@/lib/getPosts';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';

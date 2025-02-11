@@ -98,10 +98,10 @@ const Header = () => {
           </div>
           <div className={styles.dropdown}>
             <div className={styles.dropdownSelected}>{language}<div className={styles.arrow}>{">"}</div></div>
-            <ol className={styles.dropdownList}>
+           {/* <ol className={styles.dropdownList}>
               {(language === "ENG") && <li className={styles.dropdownItem} onClick={handleLanguageCZ}>CZ</li>}
               {(language === "CZ") && <li className={styles.dropdownItem} onClick={handleLanguageEN}>ENG</li>}
-            </ol>
+            </ol> */}
           </div>
           <div className={`${styles.czenhidden} ${isMenuOpen ? styles.czen : ""}`}>
             <Link href="#" className={styles.link1}>CZ</Link>
