@@ -17,11 +17,12 @@ export default function BlogCarousel({ posts }) {
               <Image
                 src={post.image} // URL obrázku z frontmatteru
                 alt={`Image for ${post.title}`}
-                width={150}
+                width={350}
                 height={180}
+                style={{ objectFit: "cover" }}
               />
+              <div className={styles.cover}></div>
             </div>
-            <p className={styles.excerpt}>{post.content.slice(0, 180)}...</p>
             </Link>
           </div>
         ))}
