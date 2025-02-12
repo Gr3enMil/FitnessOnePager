@@ -11,6 +11,8 @@
   text-align: start;
   max-width: 2500px;
   margin: 4rem auto;
+  font-family: var(--fontOpen2);
+  font-size: 0.95rem;
 }
 
 .left {

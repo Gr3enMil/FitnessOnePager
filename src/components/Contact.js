@@ -102,6 +102,7 @@ const Contact = () => {
             required
           />
         </div>
+        {/* 
         <div className={styles.formRow}>
           <select
             name="service"
@@ -126,8 +127,8 @@ const Contact = () => {
             <option value="">Tvůj cíl*</option>
             <option value="zhubnout">Hubnutí</option>
             <option value="nabrat svaly">Nárůst svalové hmoty</option>
-          </select>
-        </div>
+          </select> 
+        </div> */}
         <textarea
           name="message"
           placeholder="Zpráva s dalšími informacemi (nepovinné pole)"

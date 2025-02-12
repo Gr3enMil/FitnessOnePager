@@ -40,3 +40,21 @@ a {
   text-decoration: none;
 }
 
+#about {
+  scroll-margin-top: 5rem; 
+}
+#pros {
+  scroll-margin-top: 4rem; 
+}
+#contact {
+  scroll-margin-top: 6rem; 
+}
+#services {
+  scroll-margin-top: 7rem;
+}
+#clients {
+  padding-top: 7rem;
+  margin-top: -5rem;
+}
+
+

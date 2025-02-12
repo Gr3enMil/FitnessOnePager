@@ -3,7 +3,7 @@ import styles from './Pros.module.css';
 
 export default function Pros() {
   return (
-    <section className={styles.prosSection} id="advantages">
+    <section className={styles.prosSection} id="pros">
       <h2 className={styles.title}>VÝHODY SPOLUPRÁCE</h2>
       <div className={styles.prosContainer}>
         <div className={styles.proItem}>

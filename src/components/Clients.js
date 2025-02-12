@@ -32,7 +32,7 @@ export default function Clients({ clients }) {
   };
 
   return (
-    <div className={styles.clientsContainer} id="reference">
+    <div className={styles.clientsContainer} id="clients">
       <h1 className={styles.title}>REFERENCE</h1>
       <div className={styles.navigation}>
         <div className={styles.arrow} onClick={handlePrev}></div>
@@ -42,7 +42,7 @@ export default function Clients({ clients }) {
               <Image
                 src={clients[currentClientIndex].photo}
                 alt={`Photo of ${clients[currentClientIndex].name}`}
-                width={360}
+                width={320}
                 height={320}
                 className={styles.image} 
               />

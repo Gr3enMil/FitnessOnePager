@@ -74,7 +74,7 @@ const Header = () => {
       <div className={styles.headerContainer}>
         <div className={styles.topBar}>
           <div className={styles.logo}>
-            <Image src="/images/logo.png" alt="Barbara Maiarino Personal Trainer" width={150} height={50} />
+            <Link href="/"><Image src="/images/logo.png" alt="Barbara Maiarino Personal Trainer" width={150} height={50} /></Link>
           </div>
           <div
             className={`${styles.burger} ${isMenuOpen ? styles.open : ''}`}
@@ -87,9 +87,9 @@ const Header = () => {
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           <ul>
             <li onClick={handleClose}><Link href="/#about">O TRENÉRCE</Link></li>
-            <li onClick={handleClose}><Link href="/#advantages">VÝHODY</Link></li>
+            <li onClick={handleClose}><Link href="/#pros">VÝHODY</Link></li>
             <li onClick={handleClose}><Link href="/#services">SLUŽBY</Link></li>
-            <li onClick={handleClose}><Link href="/#reference">REFERENCE</Link></li>
+            <li onClick={handleClose}><Link href="/#clients">REFERENCE</Link></li>
             <li onClick={handleClose}><Link href="/blog">BLOG</Link></li>
             <li onClick={handleClose}><Link href="/#contact">KONTAKT</Link></li>
           </ul>

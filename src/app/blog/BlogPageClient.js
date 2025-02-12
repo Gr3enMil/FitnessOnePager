@@ -98,13 +98,15 @@ export default function BlogPageClient({ posts }) {
                     src={post.image} // z frontmatteru
                     alt={`Image for ${post.title}`}
                     style={{ objectFit: "cover" }}
-                    width={150}
+                    width={350}
                     height={180}
+                    className={styles.image}
                   />
+                  <div className={styles.cover}></div>
                 </div>
-                <div className={styles.blogText}>
+                {/*<div className={styles.blogText}>
                   <p>{post.content.slice(0, 200)}...</p>
-                </div>
+                </div> */}
               </div>
             </Link>
           </li>

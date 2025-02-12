@@ -1,5 +1,5 @@
 .blogContainer {
-  max-width: 1000px; 
+  max-width: 880px; 
   margin: 0 auto;
   padding: 20px;
   font-family: var(--fontOpen2);
@@ -48,15 +48,16 @@
 /* Oprava h1, aby nebyl pevně omezený */
 .blogPost > h1:first-of-type {
   font-family: var(--fontBebas);
-  font-size: var(--fontSize2);
+  font-size: var(--fontSize1);
   text-transform: uppercase;
-  grid-column: 3 / span 3;
-  grid-row: 2 / auto; /* Automatické přizpůsobení */
+  grid-column: 1 / span 5;
+  grid-row: auto; /* Automatické přizpůsobení */
+  margin-top: 2rem;
 }
 
 /* Obrázek se automaticky roztáhne podle obsahu */
 .blogPost > img:first-of-type {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 5;
   grid-row: auto;
   width: 100%;
   height: auto;
@@ -64,7 +65,15 @@
 }
 
 /* Oprava nadpisů h2 a h3 */
-.blogPost h1, .blogPost h2 {
+.blogPost h1 {
+  font-family: var(--fontBebas);
+  font-size: var(--fontSize1);
+  text-transform: uppercase;
+  grid-column: span 5;
+  grid-row: auto;
+}
+
+.blogPost h2 {
   font-family: var(--fontBebas);
   font-size: var(--fontSize2);
   text-transform: uppercase;
@@ -72,19 +81,34 @@
   grid-row: auto;
 }
 
-.blogPost h3, .blogPost h4 {
+.blogPost h3 {
   font-family: var(--fontBebas);
   font-size: var(--fontSize3);
   text-transform: uppercase;
   grid-column: span 5;
   grid-row: auto;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.blogPost h4 {
+  font-family: var(--fontBebas);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  grid-column: span 5;
+  grid-row: auto;
+}
+
+.blogPost h5 {
+  font-family: var(--fontBebas);
+  font-size: 1rem;
+  color: #ff0000;
 }
 
 /* Oprava paragrafů, aby se nerozbíjely */
 .blogPost p:first-of-type {
-  grid-column: 3 / span 3;
-  grid-row: 2 / auto; /* Dynamická výška */
-  margin-top: 5rem;
+  grid-column: 1/ span 5;
+  grid-row: auto; /* Dynamická výška */
+  margin-top: 2rem
 }
 
 .blogPost p {
