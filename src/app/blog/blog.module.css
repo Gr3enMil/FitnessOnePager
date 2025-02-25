@@ -29,6 +29,11 @@
   color: #fff;
   text-decoration: none;
   text-align: center;
+  transition: color 0.3s ease;
+}
+
+.blogLink:hover {
+  color: #686868;
 }
 
 .filter {
@@ -132,7 +137,7 @@
   position: absolute;
   top:0;
   z-index: 3;
-  background-color: #00000079;
+  background-color: #00000042;
   transition: ease-in-out 0.5s;
 }
 

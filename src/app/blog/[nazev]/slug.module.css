@@ -102,6 +102,7 @@
   font-family: var(--fontBebas);
   font-size: 1rem;
   color: #ff0000;
+  font-weight: 400;
 }
 
 /* Oprava paragrafů, aby se nerozbíjely */

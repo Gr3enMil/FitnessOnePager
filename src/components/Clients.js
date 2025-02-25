@@ -17,7 +17,7 @@ export default function Clients({ clients }) {
         prevIndex === 0 ? clients.length - 1 : prevIndex - 1
       ); 
       setAnimationClass(styles.slideInFromLeft);
-    }, 500);
+    }, 700);
   };
 
   const handleNext = () => {
@@ -28,7 +28,7 @@ export default function Clients({ clients }) {
         prevIndex === clients.length - 1 ? 0 : prevIndex + 1
       );
       setAnimationClass(styles.slideInFromRight);
-    }, 500);
+    }, 700);
   };
 
   return (

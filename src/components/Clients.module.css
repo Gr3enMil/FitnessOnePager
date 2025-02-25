@@ -197,17 +197,18 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .clientsContainer {
     width: 100%;
   }
   .clientImage {
     width: 100%;
     height: auto;
+    margin-bottom: 2rem;
   }
   .arrow, .arrow2 {
     position: absolute;
-    top: 54%;
+    top: 58%;
     padding: 10px;
   }
   .arrow {
@@ -218,5 +219,10 @@
   }
   .clientInfo h2, .clientInfo h3 {
     text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .clientImage {
+    margin-bottom: 0;
   }
 }
