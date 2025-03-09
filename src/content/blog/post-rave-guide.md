@@ -3,7 +3,7 @@ id: "1"
 nazev: post-rave-guide
 title: YOUR ULTIMATE POST RAVE RECOVERY GUIDE
 typ: lifestyle
-image: /uploads/post-rave-starter-pack.jpg
+image: /uploads/img_6130.jpeg
 ---
 One of the moments that completely changed my life was back in 2017 when one of my friends introduced me to raving. I remember he took me to a basement where some of his friends were playing some totally weird really fast music that I’ve never heard of. I didn’t know it then, but this group of people would become my core friend group throughout all my university years and beyond. And Tekno (with the K) would become my favourite music genre to dance to. 
 
