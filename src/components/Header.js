@@ -97,11 +97,7 @@ const Header = () => {
             <div className={styles.button} onClick={e => handleScroll(e, "/", "contact")}>CHCI ZAČÍT!</div>
           </div>
           <div className={styles.dropdown}>
-            <div className={styles.dropdownSelected}>{language}<div className={styles.arrow}>{">"}</div></div>
-           {/* <ol className={styles.dropdownList}>
-              {(language === "ENG") && <li className={styles.dropdownItem} onClick={handleLanguageCZ}>CZ</li>}
-              {(language === "CZ") && <li className={styles.dropdownItem} onClick={handleLanguageEN}>ENG</li>}
-            </ol> */}
+            <div className={styles.dropdownSelected}>{language}</div>
           </div>
           <div className={`${styles.czenhidden} ${isMenuOpen ? styles.czen : ""}`}>
             <Link href="#" className={styles.link1}>CZ</Link>

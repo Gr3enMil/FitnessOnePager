@@ -25,25 +25,17 @@ export default function About() {
         </div>
         <div className={styles.textWrapper}>
           <p>
-            Se silovým tréninkem mám desetiletou zkušenost, kdy jsem začínala
-            úplně sama bez žádného vedení. Prošla jsem všemi chybami, které
-            může začátečník na své cestě udělat, bez kterých bych si cestu dost
-            zkrátila. Ale získala jsem se během toho mnoho znalostí, které teď
-            předávám dál. Naučila jsem se, že ke změně života k lepšímu nestačí
-            jen držet se tréninkového plánu a jídelníčku, ale že ta největší změna
-            musí proběhnout v hlavě. Zamilovala jsem se do zkoumání lidského těla
-            a mysli natolik, že jsem vystudovala lidskou fyziologii a
-            neurobiologii na vysoké škole. Díky tomu teď zvládám koukat na
-            problémy komplexně a nedržím se zajetých dogmat, což se snažím
-            předávat dál.
+          Když si vybíráte trenéra nebo kouče, který by vás podpořil v dosahování vašich cílů, myslím, že je důležité znát jeho zkušenosti a přístup.
           </p>
           <p>
-            Mezi mé sportovní úspěchy patří druhé místo na prestižní soutěži EVLS
-            Prague v roce 2023, kde jsem soutěžila v kategorii bikini fitness. Mimo
-            to mám medaili z mistrovství České republiky v Aerial Art na šále, díky
-            které jsem se kvalifikovala na mistrovství světa. Také jsem soutěžila
-            jako juniorka v silovém trojboji a pole dance.
+          Před deseti lety jsem začala svou cestu za fitness úplně sama bez jakéhokoli vedení. Prošla jsem si všemi chybami, kterých se začátečník může na této cestě dopustit. Vím, jaké to je být v koloběhu hubnutí tuku a příbytku svalů, ale nikdy se necítit dost dobře.
           </p>
+          <p>
+          Během tohoto procesu jsem si zamilovala zkoumání lidského těla a mysli natolik, že jsem vystudovala fyziologii člověka a neurovědy na Karlově univerzitě v Praze a také jsem získala akreditovaný certifikát osobního trenéra.           </p>
+          <p>
+          Díky tomu se dokážu na problémy dívat komplexně a nedržet se dogmat - což je přístup, který se snažím předávat dál. Naučila jsem se, že ke změně života k lepšímu nestačí jen dodržovat cvičební plán a dietu, ale že největší změna se musí odehrát v hlavě.          </p>
+          <p>
+          Věřím, že se správným tréninkem, při kterém se cítíme dobře, zaměřený na sílu a výkon, správnou stravou, a osvobozením se od myšlení „všechno nebo nic“ můžeme dosáhnout spokojenosti se svým tělem.           </p>
         </div>
         <div className={styles.iconsWrapper}>
           <div className={styles.iconItem}>

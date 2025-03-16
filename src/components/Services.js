@@ -22,17 +22,17 @@ export default function Services() {
               <p>Během 60 minut ti ukážu, že posilovna může být i zábavné místo.</p>
 
               <ul>
-                <li>Úvodní konzultace cílů a priorit.</li>
-                <li>Ukážeme si cviky na zlepšení mobility těla.</li>
-                <li>Naučíme se efektivní cviky kopírující základní pohybové vzorce.</li>
-                <li>Ukážu ti různé variace cviků, ze kterých si pak můžeš vybrat.</li>
+                <li>Úvodní konzultace cílů a priorit, na jejichž základě vyberu vhodná cvičení.</li>
+                <li>Ukázka cviků, které můžeš zavést do svého tréninkového plánu pro zlepšení pohyblivosti a flexibility těla v závislosti na slabinách.
+                </li>
+                <li>Naučíš se účinné cviky, které kopírují základní pohybové vzorce a jejich variace, stejně tak techniky k dosažení svalové hypertrofie.</li>
               </ul>
               <p className={styles.price}>800,- Kč / hodina</p>
             </div>
           </div>
         </div>
 
-        <div className={styles.serviceCard}>
+        {/*<div className={styles.serviceCard}>
           <h3 className={styles.serviceTitle2}>Jídelníček a suplementační plán</h3>
           <div className={styles.serviceContent}>
             <div className={styles.imageWrapper}>
@@ -54,7 +54,7 @@ export default function Services() {
               <p className={styles.price}>800,- Kč / hodina</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.serviceCard}>
           <h3 className={styles.serviceTitle}>Online Coaching 1:1</h3>
@@ -77,7 +77,7 @@ export default function Services() {
                 <li>Vzdělávání v oblasti spánku, zvládání stresu, biohackingu, rutiny a mindsetu, které ti zaručí, že budeš svým nejlepším a nejproduktivnějším já.</li>
               </ul>
               <p className={styles.price}>2 500,- až 3 500,- Kč / měsíc</p>
-              <p className={styles.note}>Z důvodů vybudování návyků a prvních výsledků je minimální doba spolupráce stanovena na tři měsíce</p>
+              <p className={styles.note}>Z důvodů vybudování návyků a prvních výsledků je minimální doba spolupráce stanovena na tři měsíce.</p>
             </div>
           </div>
         </div>
