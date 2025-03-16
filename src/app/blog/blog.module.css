@@ -71,13 +71,15 @@
 .blogPost p {
   font-size: var(--fontSize4);
   font-family: var(--fontOpen2);
-  font-weight: 400;
+  font-weight: 700;
+ 
 }
 
 .blogContent {
   position: relative;
   display: flex;
   gap: 1rem;
+ 
 }
 
 .filterButton {

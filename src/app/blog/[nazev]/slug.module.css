@@ -115,6 +115,7 @@
 .blogPost p {
   grid-column: span 5;
   grid-row: auto; /* Dynamická výška */
+  text-align: justify;
 }
 
 /* Oprava pro p s obrázky */
