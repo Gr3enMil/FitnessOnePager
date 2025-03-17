@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.contact}>
         <h3 className={styles.contactTitle}>KONTAKT</h3>
         <p>Barbara Mallarino</p>
-        <p><a href="mailto:barbaramallcoaching@gmail.com" className={styles.contactLink}>barbaramallcoaching@gmail.com</a></p>
+        <p><a href="mailto:barbara.mallarino@gmail.com" className={styles.contactLink}>barbara.mallarino@gmail.com</a></p>
       </div>
       <div className={styles.location}>
         <h3 className={styles.locationTitle}>PŮSOBIŠTĚ</h3>

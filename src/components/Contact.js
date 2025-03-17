@@ -7,11 +7,11 @@ import styles from './Contact.module.css';
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: '',
-    lastName: '',
+    //lastName: '',
     email: '',
     phone: '',
-    service: '',
-    goal: '',
+    //service: '',
+    //goal: '',
     message: '',
     consent: false,
   });
@@ -31,7 +31,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (formData.consent && formData.firstName && formData.lastName && formData.email && formData.phone && formData.service && formData.goal) {
+    if (formData.consent && formData.firstName && /*formData.lastName && */formData.email && formData.phone /*&& formData.service && formData.goal */) {
       try {
         const response = await fetch('/api/sendEmail', {
           method: 'POST',
@@ -62,14 +62,14 @@ const Contact = () => {
           <input
             type="text"
             name="firstName"
-            placeholder="Jméno*"
+            placeholder="Celé jméno*"
             value={formData.firstName}
             onChange={handleChange}
             className={styles.inputField}
             aria-required="true"
             required
           />
-          <input
+         {/*<input
             type="text"
             name="lastName"
             placeholder="Příjmení*"
@@ -78,7 +78,7 @@ const Contact = () => {
             className={styles.inputField}
             aria-required="true"
             required
-          />
+          /> */}
         </div>
         <div className={styles.formRow}>
           <input

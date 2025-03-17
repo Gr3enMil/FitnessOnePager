@@ -20,11 +20,10 @@ export async function POST(request) {
     to: process.env.SMTP_USER,
     subject: 'Nová poptávka konzultace',
     text: `
-      Jméno: ${firstName} ${lastName}
+      Jméno: ${firstName} 
       Email: ${email}
       Telefon: ${phone}
-      Poptávám: ${service}
-      Cíl: ${goal}
+      
       Zpráva: ${message}
     `,
   };

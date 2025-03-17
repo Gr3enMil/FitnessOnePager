@@ -11,24 +11,28 @@ export default function Clients({ clients }) {
 
   const handlePrev = () => {
     setAnimationClass(styles.slideOutToRight);
-    setPrevClientIndex(currentClientIndex);
     setTimeout(() => {
       setCurrentClientIndex((prevIndex) =>
         prevIndex === 0 ? clients.length - 1 : prevIndex - 1
       ); 
-      setAnimationClass(styles.slideInFromLeft);
-    }, 700);
+      setTimeout(() => {
+        setAnimationClass(styles.slideInFromLeft);
+      }, 100);  
+    }, 500);
   };
 
   const handleNext = () => {
     setAnimationClass(styles.slideOutToLeft);
-    setPrevClientIndex(currentClientIndex);
+    // Počkej, než animace zmizení skončí
     setTimeout(() => {
       setCurrentClientIndex((prevIndex) =>
         prevIndex === clients.length - 1 ? 0 : prevIndex + 1
       );
-      setAnimationClass(styles.slideInFromRight);
-    }, 700);
+      // Po malé pauze zobraz novou kartu
+      setTimeout(() => {
+        setAnimationClass(styles.slideInFromRight);
+      }, 100); // Krátká pauza pro předejití probliknutí
+    }, 500); // Doba trvání animace zmizení
   };
 
   return (

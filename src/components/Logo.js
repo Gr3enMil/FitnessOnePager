@@ -41,7 +41,10 @@ export default function Logo() {
         <p className={styles.quote}>
           “Ať už je tvým cílem úbytek tělesného tuku, budování svalové hmoty, nebo se prostě jen naučit hýbat a posouvat ve všech oblastech života. Jsi na správném místě!”
         </p>
-        <div className={styles.scroll}>
+        <div className={styles.scroll} onClick={()=>{
+          const element = document.getElementById('contact');
+          element.scrollIntoView({behavior: "smooth"});
+          }}>
           <div className={styles.mouse} onMouseEnter={arrowMove} onMouseLeave={arrowStop}></div>
           <div className={styles.arrow} onMouseEnter={arrowMove}></div>
         </div>
