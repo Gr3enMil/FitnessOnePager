@@ -17,7 +17,7 @@ export default function Clients({ clients }) {
       ); 
       setTimeout(() => {
         setAnimationClass(styles.slideInFromLeft);
-      }, 100);  
+      }, 400);  
     }, 500);
   };
 
@@ -31,7 +31,7 @@ export default function Clients({ clients }) {
       // Po malé pauze zobraz novou kartu
       setTimeout(() => {
         setAnimationClass(styles.slideInFromRight);
-      }, 100); // Krátká pauza pro předejití probliknutí
+      }, 400); // Krátká pauza pro předejití probliknutí
     }, 500); // Doba trvání animace zmizení
   };
 
