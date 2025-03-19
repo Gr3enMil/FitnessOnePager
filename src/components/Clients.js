@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./Clients.module.css";
 
+
 export default function Clients({ clients }) {
   const [currentClientIndex, setCurrentClientIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState("");
@@ -11,28 +12,37 @@ export default function Clients({ clients }) {
 
   const handlePrev = () => {
     setAnimationClass(styles.slideOutToRight);
-    setTimeout(() => {
-      setCurrentClientIndex((prevIndex) =>
-        prevIndex === 0 ? clients.length - 1 : prevIndex - 1
-      ); 
-      setTimeout(() => {
-        setAnimationClass(styles.slideInFromLeft);
-      }, 400);  
-    }, 500);
+  
+    const nextIndex = currentClientIndex === 0 ? clients.length - 1 : currentClientIndex - 1;
+    const nextImageSrc = clients[nextIndex].photo;
+  
+    // Přednačtení obrázku
+    fetch(nextImageSrc)
+      .then((res) => res.blob())
+      .then(() => {
+        setTimeout(() => {
+          setCurrentClientIndex(nextIndex);
+          setAnimationClass(styles.slideInFromLeft);
+        }, 300); 
+      })
+      .catch((err) => console.error("Chyba při načítání obrázku:", err));
   };
 
   const handleNext = () => {
     setAnimationClass(styles.slideOutToLeft);
-    // Počkej, než animace zmizení skončí
-    setTimeout(() => {
-      setCurrentClientIndex((prevIndex) =>
-        prevIndex === clients.length - 1 ? 0 : prevIndex + 1
-      );
-      // Po malé pauze zobraz novou kartu
+
+    const nextIndex = currentClientIndex === clients.length - 1 ? 0 : currentClientIndex + 1;
+    const nextImageSrc = clients[nextIndex]?.photo;
+    
+    fetch(nextImageSrc)
+    .then((res) => res.blob())
+    .then(() => {
       setTimeout(() => {
+        setCurrentClientIndex(nextIndex);
         setAnimationClass(styles.slideInFromRight);
-      }, 400); // Krátká pauza pro předejití probliknutí
-    }, 500); // Doba trvání animace zmizení
+      }, 300);
+    })
+    .catch((err) => console.error("Chyba při načítání obrázku:", err));
   };
 
   return (
