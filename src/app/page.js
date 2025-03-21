@@ -23,13 +23,12 @@ export default async function Home() {
       <main className={styles.main}>
         <Logo />  
         <About />
-        <Pros />
         <Services />
+        <Pros />
         <Clients clients={clients}/>
         <Blog posts={latestPosts}/>
         <Contact />
       </main>
     </div>
-    
   );
 }

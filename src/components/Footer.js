@@ -24,7 +24,7 @@ const Footer = () => {
       <div className={styles.social}>
         <h3 className={styles.socialTitle}>SOCIÁLNÍ SÍTĚ</h3>
         <a href="https://www.instagram.com/baramoves" target="_blank" rel="noopener noreferrer" className={styles.socialLink}><Image src="/images/iglogo.png" alt="IG" width={50} height={50} className={styles.logo2} /></a>
-        <a href="https://www.youtube.com/watch?v=qGtJEMlGiho" target="_blank" rel="noopener noreferrer" className={styles.socialLink}><Image src="/images/ytlogo.png" alt="YT" width={68} height={54} className={styles.logo2} /></a>
+        <a href="https://youtube.com/@baramoves?si=j10vVNKH8_U0CVjW" target="_blank" rel="noopener noreferrer" className={styles.socialLink}><Image src="/images/ytlogo.png" alt="YT" width={68} height={54} className={styles.logo2} /></a>
       </div>
     </footer>
   );
