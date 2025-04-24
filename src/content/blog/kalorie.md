@@ -20,8 +20,7 @@ Tvoje dieta může být strašná, může být skvělá, může mít hodně nebo
 
 **A taky to, co ti funguje teď, ti nemusí fungovat za 10 let** – proto je důležité mít nějaké základy na kterých stavět a nějakou obecnou strukturu a pak být flexibilní a umět se přizpůsobit různým životním situacím. Když spojíš informace s trochou experimentování, můžeme vytvořit pro nás dokonalou dietu. Musí to být udržitelné douhodobě. Když to nebude udržitelné, nebude to nejlepší jídelníček. A nezajímá mě jak moc je to optimalizované.
 
-## \
-První pilíř zdravého stravování je Energetická bilance
+## První pilíř zdravého stravování je Energetická bilance
 
 Pokud si myslíš že zákony termodynamiky na tebe neplatí a že kalorický deficit ti nefunguje, kecáš sám sobě. A pokud ti někdo říká že na kaloriích nezáleží, je to red flag. A double red flag pokud ti chce prodat nějaký suplement. 
 
