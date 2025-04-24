@@ -1,6 +1,6 @@
 ---
 id: "1"
-nazev: Mealprep těstoviny
+nazev: mealprep-těstoviny
 title: Macro-friendly Ragú
 typ: recepty
 image: /uploads/img_8810.jpg
