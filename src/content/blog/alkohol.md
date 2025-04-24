@@ -88,8 +88,7 @@ Já třeba piju alkohol tak jednou do měsíce když jdu na rave, nebo občas na
 
 Takže v tom případě by bylo dobré zařadit nějaké strategie abychom předešli těm negativním následkům z pití alkoholu.
 
-### \
-Jak teda zařadit alkohol?
+### Jak teda zařadit alkohol?
 
 Pokud jsi zvyklý každý večer pít skleničku vína, zkus si nastavit nějaký limit jako třeba dvě skleničky týdně. 
 
