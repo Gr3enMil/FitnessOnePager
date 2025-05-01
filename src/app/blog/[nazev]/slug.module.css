@@ -55,13 +55,24 @@
   margin-top: 2rem;
 }
 
+.blogPost img {
+  grid-column: 1 / span 5;
+  grid-row: auto;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
 .blogPost > img:first-of-type {
   grid-column: 1 / span 5;
   grid-row: auto;
   width: 100%;
   height: auto;
   max-height: 500px; /* Maximální výška pro větší obrázky */
+  margin: 0;
 }
+
+
 
 .blogPost h1 {
   font-family: var(--fontBebas);

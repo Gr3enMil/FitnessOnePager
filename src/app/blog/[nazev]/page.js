@@ -53,7 +53,7 @@ export default async function BlogPostPage({ params }) {
     <div className={styles.blogContainer}>
       <article className={styles.blogPost}>
           <Link href="/blog" className={styles.blogLink}>
-            &lt; ZPĚT NA SEZNAM ČLÁNKŮ
+            &lt; ZPĚT
           </Link>
           <span className={styles.blogTyp}>{post.data.typ}</span>
           <Image
