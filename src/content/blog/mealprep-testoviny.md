@@ -1,6 +1,6 @@
 ---
-id: "1"
-nazev: mealprep-těstoviny
+id: "5"
+nazev: mealprep-testoviny
 title: MACRO FRIENDLY RAGÚ
 typ: recepty
 image: /uploads/img_8810.jpg

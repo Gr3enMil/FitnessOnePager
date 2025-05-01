@@ -1,5 +1,5 @@
 ---
-id: "1"
+id: "4"
 nazev: kalorie
 title: "MOJE FILOZOFIE VE STRAVĚ "
 typ: strava

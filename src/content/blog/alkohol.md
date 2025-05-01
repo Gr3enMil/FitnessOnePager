@@ -1,5 +1,5 @@
 ---
-id: "2"
+id: "1"
 nazev: alkohol
 title: Můžu pít alkohol?
 typ: strava
