@@ -85,7 +85,11 @@ export default function BlogPageClient({ posts }) {
           </div>
         </div>
       </div>
-      <ul className={styles.blogPost}>
+      <ul
+        className={`${styles.blogPost} ${
+          paginatedPosts.length === 1 ? styles.blogPostStart : ""
+        }`}
+      >
         {paginatedPosts.map((post) => (
           <li key={post.id} className={styles.blogItem}>
             <Link href={`/blog/${post.nazev}`}>
